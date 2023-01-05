@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>技术成本 - 浮生笔记</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="DennisThink" />
+  <meta name="description" content="技术成本 对于技术债务这个词我们应该不陌生了,但是技术成本这个词听到的应该不多,那我就从我的角度来说说对这个词语的理解。 1. 从golang与单元" />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.109.0" />
+
+
+<link rel="canonical" href="https://www.dennisthink.com/post/2020/01/%E6%96%B0%E6%8A%80%E6%9C%AF%E7%9A%84%E6%88%90%E6%9C%AC/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.de22abc00de44766eebd1054fd9e0b254b071f89d5019044f893c484a9249a8d.css" integrity="sha256-3iKrwA3kR2buvRBU/Z4LJUsHH4nVAZBE&#43;JPEhKkkmo0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+
+
+<meta property="og:title" content="技术成本" />
+<meta property="og:description" content="技术成本 对于技术债务这个词我们应该不陌生了,但是技术成本这个词听到的应该不多,那我就从我的角度来说说对这个词语的理解。 1. 从golang与单元" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.dennisthink.com/post/2020/01/%E6%96%B0%E6%8A%80%E6%9C%AF%E7%9A%84%E6%88%90%E6%9C%AC/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-01-20T21:38:52+08:00" />
+<meta property="article:modified_time" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="name" content="技术成本">
+<meta itemprop="description" content="技术成本 对于技术债务这个词我们应该不陌生了,但是技术成本这个词听到的应该不多,那我就从我的角度来说说对这个词语的理解。 1. 从golang与单元"><meta itemprop="datePublished" content="2019-01-20T21:38:52+08:00" />
+<meta itemprop="dateModified" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="wordCount" content="1965">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="技术成本"/>
+<meta name="twitter:description" content="技术成本 对于技术债务这个词我们应该不陌生了,但是技术成本这个词听到的应该不多,那我就从我的角度来说说对这个词语的理解。 1. 从golang与单元"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">浮生笔记</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      浮生笔记
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    <li class="menu-item">
+      <a class="menu-item-link">
+        <form action="/search" method="GET">
+          <input type="search" name="s" id="search-query" placeholder="">
+          <button type="submit">查找</button>
+        </form>
+      </a>
+    </li>
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight wallpaper">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">技术成本</h1>
+      
+
+      <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          DennisThink
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2019-01-20">
+      2019-01-20
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (上次更新:
+      2019-01-28)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-从golang与单元测试看应不应该用新技术">1. 从golang与单元测试看应不应该用新技术</a></li>
+    <li><a href="#2-技术人员的角度看新技术">2. 技术人员的角度看新技术</a></li>
+    <li><a href="#3-技术经理的角度看新技术">3. 技术经理的角度看新技术</a></li>
+    <li><a href="#4-技术成本">4. 技术成本</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+
+    
+    <div class="post-content">
+      <h1 id="技术成本">技术成本</h1>
+<p>对于技术债务这个词我们应该不陌生了,但是技术成本这个词听到的应该不多,那我就从我的角度来说说对这个词语的理解。</p>
+<h2 id="1-从golang与单元测试看应不应该用新技术">1. 从golang与单元测试看应不应该用新技术</h2>
+<p>之前在知乎上看到有一个问题是:<strong>为什么golang在中国这么火？</strong> golang有多火我不知道,不过我是用过golang的。我曾经在一个SaaS公司做过两个月的程序员,技术栈采用的就是golang。因为很多golang的库都用的google的,而我习惯了每次都重新下载库来编译,导致速度特别的慢。后来我问了做Java的大学同学,他说你们没有建一个镜像库么？我才知道还有镜像库这个操作,可是公司为什么没有搞镜像库呢？这个原因我没有问领导,不过我问了公司服务程序的主备是怎么做的,回答是“没有主备”。相对于Java来说,golang算是一个新的技术了,但是从我片面的经历可以看出,新技术的坑确实也不少。而新技术的这些 <em><strong>坑</strong></em> ,对于公司来说,就是技术成本。</p>
+<p>我在很多家小公司工作过,这个公司是我见到的唯一一家要求写单元测试的公司。单元测试是提高代码质量的一个好用的工具,但是就需要花费一定的成本来写测试的代码。在业务逻辑不稳定的时候,这样的成本还是比较高的。编译clang的时候,知道代码本身带了测试,是因为编译器需要非常的可靠和稳定。但是互联网公司做单元测试的,我只见到这样的一家,如果有其他的同学在工作中领导要求写单元测试,希望您在下方留言,这样的公司值得很多人学习。</p>
+<h2 id="2-技术人员的角度看新技术">2. 技术人员的角度看新技术</h2>
+<p>新技术对于程序员来说无疑大部分情况下都是非常具有吸引力的,毕竟我就是一个&quot;喜新厌旧&quot;的人。因为我曾经为了能够使用C++11的技术标准,从一个传统软件公司跳槽跑路,然后在6个月后被裁员了。作为一个C++程序员,我的工作简历上是没有MFC这个技术的(虽然我对这个技术已经算是比较熟悉了),要写界面的话,最起码是得用WPF和QT了吧。新的技术会带来新鲜感,同时也会是工作简历上一个加分项目。我想大部分的Java工程师的简历上应该不会写精通SSH了吧,如果遇到还没有使用Spring全家桶的公司也会吐槽一番吧。</p>
+<h2 id="3-技术经理的角度看新技术">3. 技术经理的角度看新技术</h2>
+<p>我没有做过技术经理,但是我向技术经理“安利”过新技术,成功的次数不多,就说说我的所见所闻吧,希望有技术经理从你们的角度说说看法。</p>
+<p>我最早的时候做过Office的格式工作,版面调整有问题的时候,我想过一个方法,就是把Office的排版结果做成两个图片,来看新的排版结果是不是更好。跟项目组长说了这个情况以后,他说你先做一个demo出来,看看情况。后来我发现技术的难度太大,就放弃了。</p>
+<p>在后来我给一个老项目检查内存泄漏的问题,因为用过C++11的共享指针,对于内存泄漏就是一把利器。我跟技术组长提了这个方案,组长让我先去看看编译服务器的编译程序的版本。当我看到gcc4.3.2的时候,我就知道我最喜欢的作家是“莫言”了。</p>
+<p>成功的经历也是有过的,就是第二点提到的那个新的公司。因为组长跟我一样是90后,也比较喜欢新的技术。公司的代码采用CMake来构建就是他完成的,我在后来把接口改为HTTP接口的工作中,增加了单元测试的部分。因为另一个小队的同事在这方面不是很熟悉,所以测试的覆盖率并不是很高,不过对我来说已经是非常好的了。</p>
+<p>这个部分有我真实的经历,也有网上听来的(真伪没有考证过)。不过管中窥豹,可见一斑,也希望更多的技术经理提供例子。</p>
+<h2 id="4-技术成本">4. 技术成本</h2>
+<p>腾讯抄袭被人吐槽已经不够新鲜了,但是几年前,腾讯在中国也是互联网的数一数二的存在了,马化腾难道不知道这个被人吐槽么?在知乎上找到了一个回答,我觉得可以说明这个问题</p>
+<blockquote>
+<p>而创新根本不是提高竞争力的必要元素，相反减低成本，提高盈利水平变得更为重要。所以，在我天朝机制不完善的情况下，抄袭作为减低成本的操作手法变得更为重要。最关键是，抄袭是明确的，创新是不明确，显然创新的风险更大。对于任何一个想要活的更久的企业，除非，他有个不缺钱的老爹，让他可以有资本随意折腾创新，大部分自己一路打拼过来的他们过来的，他们更愿意选择一条明确的道路。
+作者：潘玮霄
+链接：https://www.zhihu.com/question/24827491/answer/29235093
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+</blockquote>
+<p>我们在看到新技术带来的收益的时候,一定不要忽略新技术的成本。除此之外,还要注意成本出现的时期和成本收益的时期中间的时间差。很多公司不一定能够撑过这段时间,很多项目也是如此,很多人的在公司的岗位也是一样的。对于大多数的工程师来说,谷歌、微软、Facebook都是大家向往的公司,也是拥有很多新技术的公司。我们在看到新技术诞生的同时,不要忘记这些公司的收益完全可以覆盖掉新技术的成本了。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">DennisThink</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-01-28
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+
+    
+    
+
+
+    <footer class="post-footer">
+      
+
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/2020/01/%E8%8A%B1%E7%A7%8D%E5%AD%90/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">花种子</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/2020/01/%E9%87%91%E7%93%B6%E6%A2%85%E4%BA%BA%E7%89%A9%E5%88%86%E6%9E%90%E7%AC%AC%E4%BA%8C%E7%AF%87/">
+            <span class="next-text nav-default">金瓶梅人物第二篇</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+    
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:dennismi1024@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://www.dennisthink.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+    <br>晋ICP备18003008号
+  </span>
+  <span class="copyright-year">
+    &copy;
+    
+      2017 -
+    2023
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        DennisThink
+        
+      </span></span>
+  
+  
+  
+  
+</div>
+
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.0ad349017808f9c3192b88ad05faf786650358631fca9cd1416cbfa088cdf915.js" integrity="sha256-CtNJAXgI&#43;cMZK4itBfr3hmUDWGMfypzRQWy/oIjN&#43;RU=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

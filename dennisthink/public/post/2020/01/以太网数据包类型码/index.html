@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>以太网数据包类型码(Ethernet Type Code) - 浮生笔记</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="DennisThink" />
+  <meta name="description" content="以太网数据包类型码(Ethernet Type Code) 参考资料 以太网类型码(Ethernet type codes) EEE 802 Numbers Wiki百科-以太类型 十进制 十六进制 描述 0000 0x0000-0x05DC IEEE802.3LengthField 0257 0x0101-01FF Experimental" />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.109.0" />
+
+
+<link rel="canonical" href="https://www.dennisthink.com/post/2020/01/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%95%B0%E6%8D%AE%E5%8C%85%E7%B1%BB%E5%9E%8B%E7%A0%81/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.de22abc00de44766eebd1054fd9e0b254b071f89d5019044f893c484a9249a8d.css" integrity="sha256-3iKrwA3kR2buvRBU/Z4LJUsHH4nVAZBE&#43;JPEhKkkmo0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+
+
+<meta property="og:title" content="以太网数据包类型码(Ethernet Type Code)" />
+<meta property="og:description" content="以太网数据包类型码(Ethernet Type Code) 参考资料 以太网类型码(Ethernet type codes) EEE 802 Numbers Wiki百科-以太类型 十进制 十六进制 描述 0000 0x0000-0x05DC IEEE802.3LengthField 0257 0x0101-01FF Experimental" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.dennisthink.com/post/2020/01/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%95%B0%E6%8D%AE%E5%8C%85%E7%B1%BB%E5%9E%8B%E7%A0%81/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-01-20T21:38:52+08:00" />
+<meta property="article:modified_time" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="name" content="以太网数据包类型码(Ethernet Type Code)">
+<meta itemprop="description" content="以太网数据包类型码(Ethernet Type Code) 参考资料 以太网类型码(Ethernet type codes) EEE 802 Numbers Wiki百科-以太类型 十进制 十六进制 描述 0000 0x0000-0x05DC IEEE802.3LengthField 0257 0x0101-01FF Experimental"><meta itemprop="datePublished" content="2019-01-20T21:38:52+08:00" />
+<meta itemprop="dateModified" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="wordCount" content="774">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="以太网数据包类型码(Ethernet Type Code)"/>
+<meta name="twitter:description" content="以太网数据包类型码(Ethernet Type Code) 参考资料 以太网类型码(Ethernet type codes) EEE 802 Numbers Wiki百科-以太类型 十进制 十六进制 描述 0000 0x0000-0x05DC IEEE802.3LengthField 0257 0x0101-01FF Experimental"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">浮生笔记</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      浮生笔记
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    <li class="menu-item">
+      <a class="menu-item-link">
+        <form action="/search" method="GET">
+          <input type="search" name="s" id="search-query" placeholder="">
+          <button type="submit">查找</button>
+        </form>
+      </a>
+    </li>
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight wallpaper">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">以太网数据包类型码(Ethernet Type Code)</h1>
+      
+
+      <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          DennisThink
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2019-01-20">
+      2019-01-20
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (上次更新:
+      2019-01-28)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+
+
+    
+    <div class="post-content">
+      <h1 id="以太网数据包类型码ethernet-type-code">以太网数据包类型码(Ethernet Type Code)</h1>
+<p>参考资料
+<a href="https://blog.csdn.net/Yshe_xun/article/details/7636078?utm_source=blogxgwz2">以太网类型码(Ethernet type codes)</a></p>
+<p><a href="https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xhtml">EEE 802 Numbers</a></p>
+<p><a href="https://zh.wikipedia.org/zh-hans/%E4%BB%A5%E5%A4%AA%E7%B1%BB%E5%9E%8B">Wiki百科-以太类型</a></p>
+<table>
+<thead>
+<tr>
+<th>十进制</th>
+<th>十六进制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0000</td>
+<td>0x0000-0x05DC</td>
+<td>IEEE802.3LengthField</td>
+</tr>
+<tr>
+<td>0257</td>
+<td>0x0101-01FF</td>
+<td>Experimental</td>
+</tr>
+<tr>
+<td>0512</td>
+<td>0x0200</td>
+<td>512</td>
+</tr>
+<tr>
+<td>0513</td>
+<td>0x0201</td>
+<td>PUP Addr Trans (see 0A01)</td>
+</tr>
+<tr>
+<td></td>
+<td>0400</td>
+<td>Nixdorf</td>
+</tr>
+<tr>
+<td>1536</td>
+<td>0x0600</td>
+<td>XEROX NS IDP</td>
+</tr>
+<tr>
+<td></td>
+<td>0x0660</td>
+<td>DLOG</td>
+</tr>
+<tr>
+<td></td>
+<td>0x0661</td>
+<td>DLOG</td>
+</tr>
+<tr>
+<td>2048</td>
+<td>0800</td>
+<td>Internet IP (IPv4)</td>
+</tr>
+<tr>
+<td>2049</td>
+<td>0801</td>
+<td>X.75 Internet</td>
+</tr>
+<tr>
+<td>2050</td>
+<td>0802</td>
+<td>NBS Internet</td>
+</tr>
+<tr>
+<td>2051</td>
+<td>0803</td>
+<td>ECMA Internet</td>
+</tr>
+<tr>
+<td>2052</td>
+<td>0804</td>
+<td>Chaosnet</td>
+</tr>
+<tr>
+<td>2053</td>
+<td>0805</td>
+<td>X.25 Level 3</td>
+</tr>
+<tr>
+<td>2054</td>
+<td>0806</td>
+<td>ARP</td>
+</tr>
+<tr>
+<td>2055</td>
+<td>0807</td>
+<td>XNS Compatability</td>
+</tr>
+<tr>
+<td>2056</td>
+<td>0808</td>
+<td>Frame Relay ARP</td>
+</tr>
+<tr>
+<td>2076</td>
+<td>081C</td>
+<td>Symbolics Private</td>
+</tr>
+<tr>
+<td>2184</td>
+<td>0888-088A</td>
+<td>Xyplex</td>
+</tr>
+<tr>
+<td>2304</td>
+<td>0900</td>
+<td>Ungermann-Bass net debugr</td>
+</tr>
+<tr>
+<td>2560</td>
+<td>0A00</td>
+<td>Xerox IEEE802.3 PUP</td>
+</tr>
+<tr>
+<td>2561</td>
+<td>0A01</td>
+<td>PUP Addr Trans</td>
+</tr>
+<tr>
+<td>2989</td>
+<td>0BAD</td>
+<td>Banyan VINES</td>
+</tr>
+<tr>
+<td>2990</td>
+<td>0BAE</td>
+<td>VINES Loopback</td>
+</tr>
+<tr>
+<td>2991</td>
+<td>0BAF</td>
+<td>VINES Echo</td>
+</tr>
+<tr>
+<td>4096</td>
+<td>1000</td>
+<td>Berkeley Trailer nego</td>
+</tr>
+<tr>
+<td>4097</td>
+<td>1001-100F</td>
+<td>Berkeley Trailer encap/IP</td>
+</tr>
+<tr>
+<td>5632</td>
+<td>1600</td>
+<td>Valid Systems</td>
+</tr>
+<tr>
+<td>16962</td>
+<td>4242</td>
+<td>PCS Basic Block Protocol</td>
+</tr>
+<tr>
+<td>21000</td>
+<td>5208</td>
+<td>BBN Simnet</td>
+</tr>
+<tr>
+<td>24576</td>
+<td>6000</td>
+<td>DEC Unassigned (Exp.)</td>
+</tr>
+<tr>
+<td>24577</td>
+<td>6001</td>
+<td>DEC MOP Dump/Load</td>
+</tr>
+<tr>
+<td>24578</td>
+<td>6002</td>
+<td>DEC MOP Remote Console</td>
+</tr>
+<tr>
+<td>24579</td>
+<td>6003</td>
+<td>DEC DECNET Phase IV Route</td>
+</tr>
+<tr>
+<td>24580</td>
+<td>6004</td>
+<td>DEC LAT</td>
+</tr>
+<tr>
+<td>24581</td>
+<td>6005</td>
+<td>DEC Diagnostic Protocol</td>
+</tr>
+<tr>
+<td>24582</td>
+<td>6006</td>
+<td>DEC Customer Protocol</td>
+</tr>
+<tr>
+<td>24583</td>
+<td>6007</td>
+<td>DEC LAVC, SCA</td>
+</tr>
+<tr>
+<td>24584</td>
+<td>6008-6009</td>
+<td>DEC Unassigned</td>
+</tr>
+<tr>
+<td>24586</td>
+<td>6010-6014</td>
+<td>3Com Corporation</td>
+</tr>
+<tr>
+<td>25944</td>
+<td>6558</td>
+<td>Trans Ether Bridging</td>
+</tr>
+<tr>
+<td>25945</td>
+<td>6559</td>
+<td>Raw Frame Relay</td>
+</tr>
+<tr>
+<td>28672</td>
+<td>7000</td>
+<td>Ungermann-Bass download</td>
+</tr>
+<tr>
+<td>28674</td>
+<td>7002</td>
+<td>Ungermann-Bass dia/loop</td>
+</tr>
+<tr>
+<td>28704</td>
+<td>7020-7029</td>
+<td>LRT</td>
+</tr>
+<tr>
+<td>28720</td>
+<td>7030</td>
+<td>Proteon</td>
+</tr>
+<tr>
+<td>28724</td>
+<td>7034</td>
+<td>Cabletron</td>
+</tr>
+<tr>
+<td>32771</td>
+<td>8003</td>
+<td>Cronus VLN</td>
+</tr>
+<tr>
+<td>32772</td>
+<td>8004</td>
+<td>Cronus Direct</td>
+</tr>
+<tr>
+<td>32773</td>
+<td>8005</td>
+<td>HP Probe</td>
+</tr>
+<tr>
+<td>32774</td>
+<td>8006</td>
+<td>Nestar</td>
+</tr>
+<tr>
+<td>32776</td>
+<td>8008</td>
+<td>AT&amp;T</td>
+</tr>
+<tr>
+<td>32784</td>
+<td>8010</td>
+<td>Excelan</td>
+</tr>
+<tr>
+<td>32787</td>
+<td>8013</td>
+<td>SGI diagnostics</td>
+</tr>
+<tr>
+<td>32788</td>
+<td>8014</td>
+<td>SGI network games</td>
+</tr>
+<tr>
+<td>32789</td>
+<td>8015</td>
+<td>SGI reserved</td>
+</tr>
+<tr>
+<td>32790</td>
+<td>8016</td>
+<td>SGI bounce server</td>
+</tr>
+<tr>
+<td>32793</td>
+<td>8019</td>
+<td>Apollo Domain</td>
+</tr>
+<tr>
+<td>32815</td>
+<td>802E</td>
+<td>Tymshare</td>
+</tr>
+<tr>
+<td>32816</td>
+<td>802F</td>
+<td>Tigan, Inc.</td>
+</tr>
+<tr>
+<td>32821</td>
+<td>8035</td>
+<td>Reverse ARP</td>
+</tr>
+<tr>
+<td>32822</td>
+<td>8036</td>
+<td>Aeonic Systems</td>
+</tr>
+<tr>
+<td>32824</td>
+<td>8038</td>
+<td>DEC LANBridge</td>
+</tr>
+<tr>
+<td>32825</td>
+<td>8039-803C</td>
+<td>DEC Unassigned</td>
+</tr>
+<tr>
+<td>32829</td>
+<td>803D</td>
+<td>DEC Ethernet Encryption</td>
+</tr>
+<tr>
+<td>32830</td>
+<td>803E</td>
+<td>DEC Unassigned</td>
+</tr>
+<tr>
+<td>32831</td>
+<td>803F</td>
+<td>DEC LAN Traffic Monitor</td>
+</tr>
+<tr>
+<td>32832</td>
+<td>8040-8042</td>
+<td>DEC Unassigned</td>
+</tr>
+<tr>
+<td>32836</td>
+<td>8044</td>
+<td>Planning Research Corp.</td>
+</tr>
+<tr>
+<td>32838</td>
+<td>8046</td>
+<td>AT&amp;T</td>
+</tr>
+<tr>
+<td>32839</td>
+<td>8047</td>
+<td>AT&amp;T</td>
+</tr>
+<tr>
+<td>32841</td>
+<td>8049</td>
+<td>ExperData</td>
+</tr>
+<tr>
+<td>32859</td>
+<td>805B</td>
+<td>Stanford V Kernel exp.</td>
+</tr>
+<tr>
+<td>32860</td>
+<td>805C</td>
+<td>Stanford V Kernel prod.</td>
+</tr>
+<tr>
+<td>32861</td>
+<td>805D</td>
+<td>Evans &amp; Sutherland</td>
+</tr>
+<tr>
+<td>32864</td>
+<td>8060</td>
+<td>Little Machines</td>
+</tr>
+<tr>
+<td>32866</td>
+<td>8062</td>
+<td>Counterpoint Computers</td>
+</tr>
+<tr>
+<td>32869</td>
+<td>8065</td>
+<td>Univ. of Mass. @A mherst</td>
+</tr>
+<tr>
+<td>32870</td>
+<td>8066</td>
+<td>Univ. of Mass. @ Amherst</td>
+</tr>
+<tr>
+<td>32871</td>
+<td>8067</td>
+<td>Veeco Integrated Auto.</td>
+</tr>
+<tr>
+<td>32872</td>
+<td>8068</td>
+<td>General Dynamics</td>
+</tr>
+<tr>
+<td>32873</td>
+<td>8069</td>
+<td>AT&amp;T</td>
+</tr>
+<tr>
+<td>32874</td>
+<td>806A</td>
+<td>Autophon</td>
+</tr>
+<tr>
+<td>32876</td>
+<td>806CComDesign</td>
+<td></td>
+</tr>
+<tr>
+<td>32877</td>
+<td>806DComputgraphic Corp.</td>
+<td></td>
+</tr>
+<tr>
+<td>32878</td>
+<td>806E-8077</td>
+<td>Landmark Graphics Corp.</td>
+</tr>
+<tr>
+<td>32890</td>
+<td>807A</td>
+<td>Matra</td>
+</tr>
+<tr>
+<td>32891</td>
+<td>807B</td>
+<td>Dansk Data Elektronik</td>
+</tr>
+<tr>
+<td>32892</td>
+<td>807C</td>
+<td>Merit Internodal</td>
+</tr>
+<tr>
+<td>32893</td>
+<td>807D-807F</td>
+<td>Vitalink Communications</td>
+</tr>
+<tr>
+<td>32896</td>
+<td>8080</td>
+<td>Vitalink TransLAN III</td>
+</tr>
+<tr>
+<td>32897</td>
+<td>8081-8083</td>
+<td>Counterpoint Computers</td>
+</tr>
+<tr>
+<td>32923</td>
+<td>809B</td>
+<td>Appletalk</td>
+</tr>
+<tr>
+<td>32924</td>
+<td>809C-809E</td>
+<td>Datability</td>
+</tr>
+<tr>
+<td>32927</td>
+<td>809F</td>
+<td>Spider Systems Ltd.</td>
+</tr>
+<tr>
+<td>32931</td>
+<td>80A3</td>
+<td>Nixdorf Computers</td>
+</tr>
+<tr>
+<td>32932</td>
+<td>80A4-80B3</td>
+<td>Siemens Gammasonics Inc.</td>
+</tr>
+<tr>
+<td>32960</td>
+<td>80C0-80C3</td>
+<td>DCA Data Exchange Cluster</td>
+</tr>
+<tr>
+<td>32964</td>
+<td>80C4</td>
+<td>Banyan Systems</td>
+</tr>
+<tr>
+<td>32965</td>
+<td>80C5</td>
+<td>Banyan Systems</td>
+</tr>
+<tr>
+<td>32966</td>
+<td>80C6</td>
+<td>Pacer Software</td>
+</tr>
+<tr>
+<td>32967</td>
+<td>80C7</td>
+<td>Applitek Corporation</td>
+</tr>
+<tr>
+<td>32968</td>
+<td>80C8-80CC</td>
+<td>Intergraph Corporation</td>
+</tr>
+<tr>
+<td>32973</td>
+<td>80CD-80CE</td>
+<td>Harris Corporation</td>
+</tr>
+<tr>
+<td>32975</td>
+<td>80CF-80D2</td>
+<td>Taylor Instrument</td>
+</tr>
+<tr>
+<td>32979</td>
+<td>80D3-80D4</td>
+<td>Rosemount Corporation</td>
+</tr>
+<tr>
+<td>32981</td>
+<td>80D5</td>
+<td>IBM SNA Service on Ether</td>
+</tr>
+<tr>
+<td>32989</td>
+<td>80DD</td>
+<td>Varian Associates</td>
+</tr>
+<tr>
+<td>32990</td>
+<td>80DE-80DF</td>
+<td>Integrated Solutions TRFS</td>
+</tr>
+<tr>
+<td>32992</td>
+<td>80E0-80E3</td>
+<td>Allen-Bradley</td>
+</tr>
+<tr>
+<td>32996</td>
+<td>80E4-80F0</td>
+<td>Datability</td>
+</tr>
+<tr>
+<td>33010</td>
+<td>80F2</td>
+<td>Retix</td>
+</tr>
+<tr>
+<td>33011</td>
+<td>80F3</td>
+<td>AppleTalk AARP (Kinetics)</td>
+</tr>
+<tr>
+<td>33012</td>
+<td>80F4-80F5</td>
+<td>Kinetics</td>
+</tr>
+<tr>
+<td>33015</td>
+<td>80F7</td>
+<td>Apollo Computer</td>
+</tr>
+<tr>
+<td>33023</td>
+<td>80FF-8103</td>
+<td>Wellfleet Communications</td>
+</tr>
+<tr>
+<td>33031</td>
+<td>8107-8109</td>
+<td>Symbolics Private</td>
+</tr>
+<tr>
+<td>33072</td>
+<td>8130</td>
+<td>Hayes Microcomputers</td>
+</tr>
+<tr>
+<td>33073</td>
+<td>8131</td>
+<td>VG Laboratory Systems</td>
+</tr>
+<tr>
+<td>33074</td>
+<td>8132-8136</td>
+<td>Bridge Communications</td>
+</tr>
+<tr>
+<td>33079</td>
+<td>8137-8138</td>
+<td>Novell, Inc.</td>
+</tr>
+<tr>
+<td>33081</td>
+<td>8139-813D</td>
+<td>KTI</td>
+</tr>
+<tr>
+<td>8148</td>
+<td>Logicraft</td>
+<td></td>
+</tr>
+<tr>
+<td>8149</td>
+<td>Network Computing Devices</td>
+<td></td>
+</tr>
+<tr>
+<td>814A</td>
+<td>Alpha Micro</td>
+<td></td>
+</tr>
+<tr>
+<td>33100</td>
+<td>814C</td>
+<td>- SNMP</td>
+</tr>
+<tr>
+<td>814D</td>
+<td>BIIN</td>
+<td></td>
+</tr>
+<tr>
+<td>814E</td>
+<td>BIIN</td>
+<td></td>
+</tr>
+<tr>
+<td>814F</td>
+<td>Technically Elite Concept</td>
+<td></td>
+</tr>
+<tr>
+<td>8150</td>
+<td>Rational Corp</td>
+<td></td>
+</tr>
+<tr>
+<td>8151-8153</td>
+<td>Qualcomm</td>
+<td></td>
+</tr>
+<tr>
+<td>815C-815E</td>
+<td>Computer Protocol Pty Ltd</td>
+<td></td>
+</tr>
+<tr>
+<td>8164-8166</td>
+<td>Charles River Data System</td>
+<td></td>
+</tr>
+<tr>
+<td>817D</td>
+<td>XTP</td>
+<td></td>
+</tr>
+<tr>
+<td>817E</td>
+<td>SGI/Time Warner prop.</td>
+<td></td>
+</tr>
+<tr>
+<td>8180</td>
+<td>HIPPI-FP encapsulation</td>
+<td></td>
+</tr>
+<tr>
+<td>8181</td>
+<td>STP, HIPPI-ST</td>
+<td></td>
+</tr>
+<tr>
+<td>8182</td>
+<td>Reserved for HIPPI-6400</td>
+<td></td>
+</tr>
+<tr>
+<td>8183</td>
+<td>Reserved for HIPPI-6400</td>
+<td></td>
+</tr>
+<tr>
+<td>8184-818C</td>
+<td>Silicon Graphics prop.</td>
+<td></td>
+</tr>
+<tr>
+<td>818D</td>
+<td>Motorola Computer</td>
+<td></td>
+</tr>
+<tr>
+<td>819A-81A3</td>
+<td>Qualcomm</td>
+<td></td>
+</tr>
+<tr>
+<td>81A4</td>
+<td>ARAI Bunkichi</td>
+<td></td>
+</tr>
+<tr>
+<td>81A5-81AE</td>
+<td>RAD Network Devices</td>
+<td></td>
+</tr>
+<tr>
+<td>81B7-81B9</td>
+<td>Xyplex</td>
+<td></td>
+</tr>
+<tr>
+<td>81CC-81D5</td>
+<td>Apricot Computers</td>
+<td></td>
+</tr>
+<tr>
+<td>81D6-81DD</td>
+<td>Artisoft</td>
+<td></td>
+</tr>
+<tr>
+<td>81E6-81EF</td>
+<td>Polygon</td>
+<td></td>
+</tr>
+<tr>
+<td>81F0-81F2</td>
+<td>Comsat Labs</td>
+<td></td>
+</tr>
+<tr>
+<td>81F3-81F5</td>
+<td>SAIC</td>
+<td></td>
+</tr>
+<tr>
+<td>81F6-81F8</td>
+<td>VG Analytical</td>
+<td></td>
+</tr>
+<tr>
+<td>8203-8205</td>
+<td>Quantum Software</td>
+<td></td>
+</tr>
+<tr>
+<td>8221-8222</td>
+<td>Ascom Banking Systems</td>
+<td></td>
+</tr>
+<tr>
+<td>823E-8240</td>
+<td>Advanced Encryption Syste</td>
+<td></td>
+</tr>
+<tr>
+<td>827F-8282</td>
+<td>Athena Programming</td>
+<td></td>
+</tr>
+<tr>
+<td>8263-826A</td>
+<td>Charles River Data System</td>
+<td></td>
+</tr>
+<tr>
+<td>829A-829B</td>
+<td>Inst Ind Info Tech</td>
+<td></td>
+</tr>
+<tr>
+<td>829C-82AB</td>
+<td>Taurus Controls</td>
+<td></td>
+</tr>
+<tr>
+<td>82AC-8693</td>
+<td>Walker Richer &amp; Quinn</td>
+<td></td>
+</tr>
+<tr>
+<td>8694-869D</td>
+<td>Idea Courier</td>
+<td></td>
+</tr>
+<tr>
+<td>869E-86A1</td>
+<td>Computer Network Tech</td>
+<td></td>
+</tr>
+<tr>
+<td>86A3-86AC</td>
+<td>Gateway Communications</td>
+<td></td>
+</tr>
+<tr>
+<td>86DB</td>
+<td>SECTRA</td>
+<td></td>
+</tr>
+<tr>
+<td>86DE</td>
+<td>Delta Controls</td>
+<td></td>
+</tr>
+<tr>
+<td>86DD</td>
+<td>IPv6</td>
+<td></td>
+</tr>
+<tr>
+<td>34543</td>
+<td>86DF</td>
+<td>ATOMIC</td>
+</tr>
+<tr>
+<td>86E0-86EF</td>
+<td>Landis &amp; Gyr Powers</td>
+<td></td>
+</tr>
+<tr>
+<td>8700-8710</td>
+<td>Motorola</td>
+<td></td>
+</tr>
+<tr>
+<td>34667</td>
+<td>876B</td>
+<td>TCP/IP Compression</td>
+</tr>
+<tr>
+<td>34668</td>
+<td>876C</td>
+<td>IP Autonomous Systems</td>
+</tr>
+<tr>
+<td>34669</td>
+<td>876D</td>
+<td>Secure Data</td>
+</tr>
+<tr>
+<td>880B</td>
+<td>PPP</td>
+<td></td>
+</tr>
+<tr>
+<td>8848</td>
+<td>MPLS Multicast</td>
+<td></td>
+</tr>
+<tr>
+<td>8A96-8A97</td>
+<td>Invisible Software</td>
+<td></td>
+</tr>
+<tr>
+<td>36864</td>
+<td>9000</td>
+<td>Loopback</td>
+</tr>
+<tr>
+<td>36865</td>
+<td>9001</td>
+<td>3Com(Bridge) XNS Sys Mgmt</td>
+</tr>
+<tr>
+<td>36866</td>
+<td>9002</td>
+<td>3Com(Bridge) TCP-IP Sys</td>
+</tr>
+<tr>
+<td>36867</td>
+<td>9003</td>
+<td>3Com(Bridge) loop detect</td>
+</tr>
+<tr>
+<td>65280</td>
+<td>FF00</td>
+<td>BBN VITAL-LanBridge cache</td>
+</tr>
+<tr>
+<td>FF00-FF0F</td>
+<td>ISC Bunker Ramo</td>
+<td></td>
+</tr>
+<tr>
+<td>65535</td>
+<td>FFFF</td>
+<td>Reserved</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">DennisThink</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-01-28
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+
+    
+    
+
+
+    <footer class="post-footer">
+      
+
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/2020/01/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">一个猪队友的自白书</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/2020/01/%E7%96%AB%E6%83%85%E7%9A%84%E6%80%9D%E8%80%83/">
+            <span class="next-text nav-default">疫情的思考</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+    
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:dennismi1024@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://www.dennisthink.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+    <br>晋ICP备18003008号
+  </span>
+  <span class="copyright-year">
+    &copy;
+    
+      2017 -
+    2023
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        DennisThink
+        
+      </span></span>
+  
+  
+  
+  
+</div>
+
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.0ad349017808f9c3192b88ad05faf786650358631fca9cd1416cbfa088cdf915.js" integrity="sha256-CtNJAXgI&#43;cMZK4itBfr3hmUDWGMfypzRQWy/oIjN&#43;RU=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
