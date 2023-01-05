@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default " en" }}" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{ partial "head.html" . }}
+    <header id="header" class="header container">
+        {{ partial "header.html" . }}
+    </header>
+</head>
+
+<body>
+    <div id="mobile-panel">
+        <main id="main" class="main bg-llight wallpaper">
+            <div class="content-wrapper">
+                <div id="content" class="content container">
+                    <article class="post bg-white">
+            <section>
+                <div>
+                    <div id="search-results">
+                        <h3>Matching pages</h3>
+                    </div>
+                </div>
+            </section>
+            <script id="search-result-template" type="text/x-js-template">
+            <div id="summary-${key}" class="post-content">
+                <h4><a href="${link}">${title}</a></h4>
+                <p>${snippet}</p>
+                ${ isset tags }<p>Tags: ${tags}</p>${ end }
+                ${ isset categories }<p>Categories: ${categories}</p>${ end }
+            </div>
+            </script>
+            <script src="/js/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+            <script src="{{ "js/search.js" | absURL }}"></script>
+                    </article>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
