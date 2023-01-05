@@ -1,8 +1,9 @@
 ---
 title: 项目推荐
-date: 2019-01-20T21:38:52+08:00
-lastmod: 2019-01-28T21:41:52+08:00
+date: 2020-01-20T21:38:52+08:00
+lastmod: 2020-01-28T21:41:52+08:00
 # you can close something for this content if you open it in config.toml.
+tags: ["code-note"]
 comment: true
 mathjax: false
 ---
@@ -28,5 +29,5 @@ mathjax: false
 - 推荐理由：跨平台、可选GUI实现、支持机器人开发。
 
 - 截图：机器人和GUI聊天的一个示例
-  ![机器人聊天演示](https://www.dennisthink.com/wp-content/uploads/2020/01/2019-12-31_183552.jpg)
+  ![机器人聊天演示](https://www.dennisthink.com/wp-content/uploads/2020/01/2020-12-31_183552.jpg)
 

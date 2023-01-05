@@ -1,8 +1,9 @@
 ---
 title: Linux下用C++实现子进程控制台的输入和输出
-date: 2019-01-20T21:38:52+08:00
-lastmod: 2019-01-28T21:41:52+08:00
+date: 2020-01-20T21:38:52+08:00
+lastmod: 2020-01-28T21:41:52+08:00
 # you can close something for this content if you open it in config.toml.
+tags: ["linux","cpp","console"]
 comment: true
 mathjax: false
 ---
@@ -14,7 +15,7 @@ mathjax: false
 
 在linux下对编写的控制台程序进行测试的话,就需要对子进程的控制台输入和输出进行控制。在测试进程中,完成子进程控制台的输入和输出操作,我们通用的做法是通过父子进程建立管道,通过dup2完成管道和标准输入、输出的绑定。在父进程中通过read和write函数对管道进行读写,以下就是示例代码。
 
-如果你想在Windows平台实现这样的功能,可以参考[Windows用C++实现控制台的输入输出](https://www.dennisthink.com/2019/05/12/405/)
+如果你想在Windows平台实现这样的功能,可以参考[Windows用C++实现控制台的输入输出](https://www.dennisthink.com/2020/05/12/405/)
 
 ## 1、父进程示例代码
 

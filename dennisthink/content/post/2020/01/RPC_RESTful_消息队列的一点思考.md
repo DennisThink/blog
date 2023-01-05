@@ -1,8 +1,9 @@
 ---
 title: 关于RPC、RESTful一些思考
-date: 2019-01-20T21:38:52+08:00
-lastmod: 2019-01-28T21:41:52+08:00
+date: 2020-01-20T21:38:52+08:00
+lastmod: 2020-01-28T21:41:52+08:00
 # you can close something for this content if you open it in config.toml.
+tags: ["code-note"]
 comment: true
 mathjax: false
 ---
@@ -37,7 +38,7 @@ REST(REpresentational State Transfer 直接翻译：表现层状态转移)
 
 在工作的时候，我用到过一个公司自研的基于消息的框架，整体的交互流程如下。
 
-![基于消息的模型](https://www.dennisthink.com/wp-content/uploads/2019/11/基于消息的模型.jpg))
+![基于消息的模型](https://www.dennisthink.com/wp-content/uploads/2020/11/基于消息的模型.jpg))
 
 重点有三部分:
 
@@ -80,7 +81,7 @@ REST(REpresentational State Transfer 直接翻译：表现层状态转移)
 > 可以聊聊感悟，   
 > 你想听我聊什么，请告诉我。
 
-![浮生笔记](https://www.dennisthink.com/wp-content/uploads/2019/01/qrcode_for_gh_59f60c2a244c_430.jpg)
+![浮生笔记](https://www.dennisthink.com/wp-content/uploads/2020/01/qrcode_for_gh_59f60c2a244c_430.jpg)
 
 
 
