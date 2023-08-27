@@ -38,7 +38,7 @@ public:
 
 int main(int argc,char* argv[])
 {
-    std::cout  argc  "\t"  argv[0]  std::endl;
+    std::cout << argc << "\t"<<  argv[0] << std::endl;
     return 0;
 }
 ``` 
@@ -49,7 +49,7 @@ int main(int argc,char* argv[])
 >  g++ -Wall -Wextra -Werror Test3.cpp
 
 
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/g.png)
+![](https://www.dennisthink.com/image/2019/01/g.png)
 
 使用clang++ 6.0.0报警告
 
@@ -57,7 +57,7 @@ int main(int argc,char* argv[])
 >  clang++ -Wall -Wextra -Werror ./Test3.cpp
 
 
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/clang.png)
+![](https://www.dennisthink.com/image/2019/01/clang.png)
 
 这个警告的意思主要是防止不小心用重载覆盖了重写。本意是想重写，结果重载了。
 比如下面这样的情况:

@@ -12,16 +12,20 @@ mathjax: false
 ## 1. 下载libevent    
 
 从 http://libevent.org/ 下载。
+
+```console
 wget https://github.com/libevent/libevent/releases/download/release-2.0.22-stable/libevent-2.0.22-stable.tar.gz
+```
+
 
 解压
 
-```
-  tar -xvf libevent-2.0.22-stable.tar.gz 
-   ./autogen.sh
-   ./configure 
-   make
-   sudo make install
+```console
+tar -xvf libevent-2.0.22-stable.tar.gz 
+./autogen.sh
+./configure 
+make
+sudo make install
  ```
 
 
@@ -29,20 +33,20 @@ wget https://github.com/libevent/libevent/releases/download/release-2.0.22-stabl
 
 官方网址： http://memcached.org/downloads
 
+```console
+wget http://memcached.org/files/memcached-1.5.12.tar.gz
+tar -xvf memcached-1.5.12.tar.gz 
+./configure
+make
+sudo make install
 ```
-  wget http://memcached.org/files/memcached-1.5.12.tar.gz
-  tar -xvf memcached-1.5.12.tar.gz 
-  ./configure
-  make
-  sudo make install
- ```
 
 
 ## 3.启动memcached    
 
+```console
+memcached
 ```
-  memcached
- ```
 
 
 ## 4.使用Telnet连接进行测试    
@@ -51,18 +55,18 @@ wget https://github.com/libevent/libevent/releases/download/release-2.0.22-stabl
 
 https://zhuanlan.zhihu.com/p/29919127
 
+```console
+telnet 127.0.0.1 11211
+
+Trying 172.17.0.2...
+Connected to 172.17.0.2.
+Escape character is '^]'.
 ```
-  telnet 127.0.0.1 11211
-  
-  Trying 172.17.0.2...
-  Connected to 172.17.0.2.
-  Escape character is '^]'.
- ```
 
 
 命令的格式如下:
 
- code> command_name>  key>  flags>  exptime>  bytes>\r\n ```
+```<command_name>  <key>  <flags>  <exptime>  <bytes>\r\n ```
 
 ### 4.1 set    
 
@@ -70,24 +74,24 @@ https://zhuanlan.zhihu.com/p/29919127
 
 请求:
 
+```console
+set key1 0 0 4
+key1
 ```
-  set key1 0 0 4
-  key1
- ```
 
 
 回复：
 
+```console
+STORED
 ```
-  STORED
- ```
 
 
 请求:
 
 ```
-  set key2 0 0 8 
-  hell wol
+set key2 0 0 8 
+hell wol
  ```
 
 
@@ -102,34 +106,34 @@ https://zhuanlan.zhihu.com/p/29919127
 
 请求:
 
-```
+```console
   get key1
  ```
 
 
 回复:
 
-```
-  VALUE key1 0 4
-  key1
-  END
+```console
+VALUE key1 0 4
+key1
+END
  ```
 
 
 请求:
 
-```
-  get key2
+```console
+get key2
  ```
 
 
 回复:
 
 ```
-  VALUE key2 0 8
-  hell wol
-  END
- ```
+VALUE key2 0 8
+hell wol
+END
+```
 
 
 ### 4.3 delete    
@@ -138,27 +142,27 @@ https://zhuanlan.zhihu.com/p/29919127
 
 请求：
 
+```console
+delete key1
 ```
-  delete key1
- ```
 
 
 回复:
 
+```console
+DELETED
 ```
-  DELETED
- ```
 
 
 #### 4.3.2    
 
 再次请求：
 
+```console
+get key1
+
+END
 ```
-  get key1
-  
-  END
- ```
 
 
 ### 4.4 incr    
@@ -211,29 +215,29 @@ incr请求:
 
 请求:
 
+```console
+decr key5 1
 ```
-  decr key5 1
- ```
 
 
 回复:
 
+```console
+2
 ```
-  2
- ```
 
 
 请求:
 
+```console
+get key5
 ```
-  get key5
- ```
 
 
 回复:
 
+```console
+VALUE key5 0 1
+2
+END
 ```
-  VALUE key5 0 1
-  2
-  END
- ```

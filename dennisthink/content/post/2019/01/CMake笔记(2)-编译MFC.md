@@ -9,7 +9,7 @@ mathjax: false
 
 ## 1. 目录结构介绍
 
-![](https://www.dennisthink.com/wp-content/uploads/2019/04/MFC_FOLDER_STRUCT.png)
+![](https://www.dennisthink.com/image/2019/04/MFC_FOLDER_STRUCT.png)
 
 
 Build32.bat和Build64.bat分别是32位和64位的编译脚本。
@@ -117,9 +117,9 @@ MFCDemo1.exe
 
 ## 4.编译后的结果
 
-![](https://www.dennisthink.com/wp-content/uploads/2019/04/After_build-1.png)
+![](https://www.dennisthink.com/image/2019/04/After_build-1.png)
 
 图中红色的方框里就是编译出的结果。中间文件都在Build32目录下，这样源代码和中间的编译结果彻底的分开了。
 
 MFC的运行结果
-![](https://www.dennisthink.com/wp-content/uploads/2019/04/Run_result.png)
+![](https://www.dennisthink.com/image/2019/04/Run_result.png)

@@ -54,7 +54,7 @@ class Solution
     string longestPalindrome(string s)
     {
         std::string strResult;
-        for(std::size_t index = 0 ; index   s.length() ;index++)
+        for(std::size_t index = 0 ; index <  s.length() ;index++)
         {
             for(std::size_t subIndex = index;subIndex   s.length();subIndex++)
             {
@@ -78,7 +78,7 @@ class Solution
         {
             return true;
         }
-        while(leftIndex  = rightIndex)
+        while(leftIndex  <= rightIndex)
         {
             if(str[leftIndex] == str[rightIndex])
             {
@@ -116,13 +116,13 @@ class Solution
             return "";
         }
 
-        std::vector std::string> allResult;
+        std::vector<std::string> allResult;
         std::string strResult;
         int nLeftIndex = 0;
         int nRightIndex = 0;
         int nResultLeft = 0;
         int nResultRight = 0;
-        for (int index = 0; index   s.length(); index++)
+        for (int index = 0; index <  s.length(); index++)
         {
             //字符串的长度为奇数，且以s[index]为中心
             {
@@ -130,7 +130,7 @@ class Solution
                 nRightIndex = index;
                 nResultLeft = -1;
                 nResultRight = -1;
-                while (nLeftIndex >= 0 && nRightIndex   s.length())
+                while (nLeftIndex >= 0 && nRightIndex <  s.length())
                 {
                     if (s[nLeftIndex] == s[nRightIndex])
                     {

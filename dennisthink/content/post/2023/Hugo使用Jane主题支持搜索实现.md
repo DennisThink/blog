@@ -1,4 +1,13 @@
-# 
+---
+title: "Hugo使用Jane主题支持搜索实现"
+date: 2023-01-02T21:38:52+08:00
+lastmod: 2023-01-02T21:41:52+08:00
+weight: 50
+# you can close something for this content if you open it in config.toml.
+tags: ["hugo","jane search"]
+comment: true
+mathjax: false
+---
 
 操作系统：Windows7 64Bit Ultimate版本。
 
@@ -22,7 +31,7 @@ hugo version
 
 显示:
 
-![图像](https://www.dennisthink.com//image/2023/01/Hugo_version.png)
+![Hugo_version.png)](https://www.dennisthink.com/image/2023/01/Hugo_version.png)
 
 
 ## 3. 新建站点
@@ -39,30 +48,30 @@ tree
 ```
 显示:
 
-![](https://www.dennisthink.com//image/2023/01/Hugo_new_site_folder_show.png)
+![Hugo_new_site_folder_show.png](https://www.dennisthink.com/image/2023/01/Hugo_new_site_folder_show.png)
 
 ## 4. 安装jane主题
 
 执行下列的命令安装
 
-```
+```console
 git clone https://github.com/xianmin/hugo-theme-jane.git themes/jane
 ```
 执行命令显示:
 
-![](https://www.dennisthink.com/image/2023/01/Install_jane_theme.png)
+![Install_jane_theme.png](https://www.dennisthink.com/image/2023/01/Install_jane_theme.png)
 
 安装成功显示:
 
-![](https://www.dennisthink.com/image/2023/01/Install_jane_theme_succeed.png)
+![Install_jane_theme_succeed.png](https://www.dennisthink.com/image/2023/01/Install_jane_theme_succeed.png)
 
 ## 5. 将GitHub\searchLast\search\themes\jane\exampleSite\目录下的config.toml拷贝到GitHub\searchLast\search\目录
 
 执行 hugo server
-![](https://www.dennisthink.com/image/2023/01/Run_hugo_server_first.png)
+![Run_hugo_server_first.png](https://www.dennisthink.com/image/2023/01/Run_hugo_server_first.png)
 
 访问主页面
-![](https://www.dennisthink.com/image/2023/01/Jane_site_demo.png)
+![Jane_site_demo.png](https://www.dennisthink.com/image/2023/01/Jane_site_demo.png)
 
 ## 6.  在themes/jane/layouts/目录下添加index.json,内容如下
 
@@ -76,7 +85,7 @@ git clone https://github.com/xianmin/hugo-theme-jane.git themes/jane
 
 ## 7. 在GitHub\searchLast\search\目录的config.toml文件末尾增加
 
-```
+```console
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 ```
@@ -147,7 +156,8 @@ search.html
 
 ### 9. 修改 GitHub\searchLast\search\themes\themes/jane/partials/目录下的header.html
 添加如下内容到```{{ if .Site.Params.search.google.enable }}```前面
-```
+
+```html
 <li class="menu-item">
     <a class="menu-item-link">
     <form action="/search" method="GET">
@@ -299,11 +309,12 @@ function render(templateString, data) {
 
 在 GitHub\searchLast\search 目录
 执行
-```
+
+```console
 hugo new post/first.md
 ```
 
-```
+```console
 hugo new post/second.md
 ```
 
@@ -320,10 +331,10 @@ this is my second blog
 ### 15. 访问 http://localhost:1313/post/
 
 查找first
-![](https://www.dennisthink.com/image/2023/01/prepare_search.png)
+![prepare_search.png](https://www.dennisthink.com/image/2023/01/prepare_search.png)
 
 显示查找结果
-![](https://www.dennisthink.com/image/2023/01/Search_result_show.png)
+![Search_result_show.png](https://www.dennisthink.com/image/2023/01/Search_result_show.png)
 
 
 

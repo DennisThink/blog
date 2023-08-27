@@ -34,23 +34,23 @@ mathjax: false
 
 ```cpp {linenos=table}
 //g++ -O0 -fno-omit-frame-pointer -fno-optimize-sibling-calls -fsanitize=address ./Out_of_bounds.cpp
-#include  iostream>
+#include <iostream>
 char g_ch[5]={0};
 int main(int argc,char * argv[])
 {
-    std::cout  g_ch[5]  std::endl;
+    std::cout << g_ch[5] << std::endl;
     char ch_local[6]={0};
 
-    std::cout  ch_local[6]  std::endl;
+    std::cout << ch_local[6] << std::endl;
     for(int i = 0 ; i   7 ; i++)
     {
-        std::cout  ch_local[i]  std::endl;
+        std::cout << ch_local[i] << std::endl;
     }
 
     char * pChar = new char[5];
-    for(int i = 0 ; i   7 ; i++)
+    for(int i = 0 ; i < 7 ; i++)
     {
-        std::cout  pChar[i]  std::endl;
+        std::cout << pChar[i] << std::endl;
     }
     delete [] pChar;
     return 0;
@@ -71,10 +71,10 @@ int main(int argc,char* argv[])
 {
     char * pChar = new char;
     *pChar = '1';
-    std::cout  *pChar  std::endl;
+    std::cout<<  *pChar  <<std::endl;
     delete pChar;
     *pChar = '2';
-    std::cout  *pChar  std::endl;
+    std::cout << *pChar << std::endl;
     return 0;
 }
 ```

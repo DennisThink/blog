@@ -39,51 +39,52 @@ mathjax: false
 
 ### 3.1 思路1的代码    
 
-```c
+```cpp
 class Solution
 {
   public:
-    vector int> twoSum(vector int> &nums, int target)
+    std::vector <int> twoSum(std::vector<int> &nums, int target)
     {
         int nCount = nums.size();
-        for (int outIndex = 0; outIndex   nCount; outIndex++)
+        for (int outIndex = 0; outIndex  < nCount; outIndex++)
         {
-            for (int inIndex = outIndex + 1; inIndex   nCount; inIndex++)
+            for (int inIndex = outIndex + 1; inIndex  < nCount; inIndex++)
             {
                 if (nums[outIndex] + nums[inIndex] == target)
                 {
-                    return std::vector int>{outIndex, inIndex};
+                    return std::vector<int>{outIndex, inIndex};
                 }
             }
         }
-        return std::vector int>();
+        return std::vector<int>();
     }
 };
  ```
 
 ### 3.2 思路2的代码    
 
-```class Solution {
+```cpp
+class Solution {
 public:
-    vector int> twoSum(vector int>& nums, int target) {
-        std::map int,int> valueIndexMap;
+    std::vector <int> twoSum(std::vector<int>& nums, int target) {
+        std::map <int,int> valueIndexMap;
         int nCount = nums.size();
-        for(int index = 0;index   nCount ; index++)
+        for(int index = 0;index  < nCount ; index++)
         {
             int otherValue = target - nums[index];
             auto findIndex = valueIndexMap.find(otherValue);
             if(findIndex != valueIndexMap.end())
             {
-                return std::vector int>{findIndex->second,index};
+                return std::vector<int>{findIndex->second,index};
             }
             else
             {
-                valueIndexMap.insert(std::pair int,int>(nums[index],index));
+                valueIndexMap.insert(std::pair<int,int>(nums[index],index));
             }
         }
-        return std::vector int>{};
+        return std::vector<int>{};
     }
 };
- ```
+```
 
 [完整的代码请参考](https://github.com/DennisThink/LeetCodeNote)

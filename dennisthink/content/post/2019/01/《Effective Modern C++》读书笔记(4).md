@@ -26,8 +26,8 @@ void BaseTypeUse()
 ```cpp {linenos=table}
 void VectorUse()
 {
-    std::vector int> v{1,3,4,5};
-    std::map int,std::string> m{
+    std::vector<int> v{1,3,4,5};
+    std::map<int,std::string> m{
         {1,"ok"},
         {2,"over"}
     };
@@ -55,25 +55,25 @@ class WidgetBase
 public:
     WidgetBase()
     {
-        std::cout  __LINE__  "Default No Param constructor"  std::endl;
+        std::cout<<  __LINE__  <<"Default No Param constructor" << std::endl;
     }
 
     WidgetBase(int x,double y)
     {
-        std::cout  __LINE__  "One Int One Double Constructor"  std::endl;
+        std::cout << __LINE__ << "One Int One Double Constructor"<<  std::endl;
     }
 
     WidgetBase(int x,bool y)
     {
-        std::cout  __LINE__  "one Int One bool Contructor"  std::endl;
+        std::cout << __LINE__  <<"one Int One bool Contructor" << std::endl;
     }
 
     WidgetBase(const WidgetBase& other){
-        std::cout  "Copy Constructor"  std::endl;
+        std::cout << "Copy Constructor" << std::endl;
     }
 
     WidgetBase operator = (const WidgetBase& other){
-        std::cout  "Equal Constructor"  std::endl;
+        std::cout << "Equal Constructor" << std::endl;
     }
 
 private:
@@ -97,39 +97,39 @@ class Widget
 public:
     Widget()
     {
-        std::cout  __LINE__  "Default No Param constructor"  std::endl;
+        std::cout << __LINE__ << "Default No Param constructor"<<  std::endl;
     }
 
     Widget(int x)
     {
-        std::cout  __LINE__  "One Int Param constructor"  std::endl;
+        std::cout << __LINE__ << "One Int Param constructor"  <<std::endl;
     }
 
     Widget(int x,double y)
     {
-        std::cout  __LINE__  "One Int One Double Constructor"  std::endl;
+        std::cout << __LINE__ << "One Int One Double Constructor" << std::endl;
     }
 
     Widget(int x,bool y)
     {
-        std::cout  __LINE__  "one Int One bool Contructor"  std::endl;
+        std::cout << __LINE__<<  "one Int One bool Contructor" << std::endl;
     }
 
     Widget(std::initializer_list long double> il)
     {
-        std::cout  __LINE__  "std::initializer long double Constructor"  std::endl;
+        std::cout << __LINE__ << "std::initializer long double Constructor" << std::endl;
     }
 
     Widget(const Widget& other){
-        std::cout  "Copy Constructor"  std::endl;
+        std::cout << "Copy Constructor" << std::endl;
     }
 
     Widget operator = (const Widget& other){
-        std::cout  "Equal Constructor"  std::endl;
+        std::cout << "Equal Constructor" << std::endl;
     }
 
     operator float () const{
-        std::cout  "operator float"  std::endl;
+        std::cout << "operator float"  <<std::endl;
         return 0.0;
     }
 

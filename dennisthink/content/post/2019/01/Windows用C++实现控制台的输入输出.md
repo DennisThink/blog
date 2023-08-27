@@ -130,7 +130,7 @@ int main()
                 //检查可读管道内是否有数据
                 if (!PeekNamedPipe(hParentRead, NULL, NULL, &nReadLean, &nReadAval, NULL) || nReadAval  = 0)//PeekNamePipe用来预览一个管道中的数据，用来判断管道中是否为空
                 {
-                    std::cout    "Break  "    __LINE__   std::endl;
+                    std::cout<<    "Break  "   <<  __LINE__  <<  std::endl;
                     break;
                 }
                 memset(buff, 0, 512);
@@ -139,11 +139,11 @@ int main()
                 {                                                        //所以，会“卡”在这里。所以才需要PeekNamePipe
                     if (nReadLean == 0)
                     {
-                        std::cout    "Break  "    __LINE__    std::endl;
+                        std::cout   <<  "Break  "   <<  __LINE__  <<   std::endl;
                         break;
                     }
 
-                    std::cout    "Read : "    buff    "  "    nReadLean    std::endl;
+                    std::cout  <<   "Read : " <<    buff   <<  "  "    nReadLean  <<   std::endl;
                 }
 
                 //将数据写入子进程
@@ -155,13 +155,13 @@ int main()
     }
 
     //关闭相应的句柄
-    std::cout    TerminateProcess(priConsole.hProcess, 0)    std::endl;;
-    std::cout   CloseHandle(priConsole.hProcess);
-    std::cout    CloseHandle(priConsole.hThread);
-    std::cout    CloseHandle(hRead);
-    std::cout    CloseHandle(hWrite);
-    std::cout    CloseHandle(hParentRead);
-    std::cout    CloseHandle(hParentWrite);
+    std::cout   <<  TerminateProcess(priConsole.hProcess, 0)  <<   std::endl;;
+    std::cout  <<  CloseHandle(priConsole.hProcess);
+    std::cout  <<   CloseHandle(priConsole.hThread);
+    std::cout  <<   CloseHandle(hRead);
+    std::cout   <<  CloseHandle(hWrite);
+    std::cout  <<   CloseHandle(hParentRead);
+    std::cout  <<   CloseHandle(hParentWrite);
 
 }
 ```

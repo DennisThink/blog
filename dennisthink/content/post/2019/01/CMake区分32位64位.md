@@ -9,7 +9,7 @@ mathjax: false
 
 [原文链接](https://www.cnblogs.com/coolbear/p/7736392.html)
 
-```
+```cmake
 IF(CMAKE_CL_64)
     set(platform x64)
 ELSE(CMAKE_CL_64)

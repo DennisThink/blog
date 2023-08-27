@@ -19,7 +19,7 @@ mathjax: false
 ### 1.1 CMake的define示例
 
 1. CMakeLists.txt 文件
-```c
+```cmake
 cmake_minimum_required(VERSION 3.0)
 project(CMakeDemo2)
 if(DEFINED DEBUG_LOG)
@@ -31,16 +31,16 @@ endif()
 
 2. `cmake ..`的输出效果
 
-![define_default](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的define示例_未设置DEBUG_LOG.jpg)
+![define_default](https://www.dennisthink.com/image/2020/10/CMake的define示例_未设置DEBUG_LOG.jpg)
 
 3. `cmake .. -DDEBUG_LOG=1`的输出效果
 
-![define_DEBUG_LOG=1](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的define示例_设置DEBUG_LOG的效果.jpg)
+![define_DEBUG_LOG=1](https://www.dennisthink.com/image/2020/10/CMake的define示例_设置DEBUG_LOG的效果.jpg)
 
 ## 1.2 CMake的if示例
 
 1. CMakeLists.txt文件
-```C
+```cmake
 cmake_minimum_required(VERSION 3.0)
 project(CMakeDemo1)
 option(DEBUG_LOG "Print log for debug version" ON)
@@ -53,18 +53,18 @@ endif(DEBUG_LOG)
 
 2. `cmake .. -DDEBUG_LOG=ON`的输出效果
 
-![](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的if示例DEBUG_LOG_ON.jpg)
+![](https://www.dennisthink.com/image/2020/10/CMake的if示例DEBUG_LOG_ON.jpg)
 
 3. `cmake .. -DDEBUG_LOG=OFF`的输出效果
 
-![](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的if示例DEBUG_LOG_OFF.jpg)
+![](https://www.dennisthink.com/image/2020/10/CMake的if示例DEBUG_LOG_OFF.jpg)
 
 ## 1.3 CMake中的数值比较
 
 在CMake中,我们可以通过比较数值,来选择不同的操作,比如下面这个例子。数值比较我们使用的是`LESS`(小于)、`EQUAL`(等于)、`GREATER`(大于)
 
 1. CMakeLists.txt的示例
-```c
+```cmake
 cmake_minimum_required(VERSION 3.0)
 project(CMakeDemo3)
 if(${PREV_VALUE} LESS ${CUR_VALUE})
@@ -80,24 +80,24 @@ endif()
 
 2. `cmake ..`的输出
 
-![默认输出](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的数值比较之默认编译.jpg)
+![默认输出](https://www.dennisthink.com/image/2020/10/CMake的数值比较之默认编译.jpg)
 
 3. `cmake .. -DPREV_VALUE=1 -DCUR_VALUE=2`的输出(LESS)
 
-![LESS输出](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的数值比较_PREV_LESS_CUR.jpg)
+![LESS输出](https://www.dennisthink.com/image/2020/10/CMake的数值比较_PREV_LESS_CUR.jpg)
 
 4. `cmake .. -DPREV_VALUE=2 -DCUR_VALUE=2`的输出(EQUAL)
-![](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的数值比较之_EQUAL.jpg)
+![](https://www.dennisthink.com/image/2020/10/CMake的数值比较之_EQUAL.jpg)
 
 5. `cmake .. -DPREV_VALUE=2 -DCUR_VALUE=1`的输出(GREATER)
-![](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的数值比较之_GREATER.jpg)
+![](https://www.dennisthink.com/image/2020/10/CMake的数值比较之_GREATER.jpg)
 
 ## 1.4 CMake中的字符串比较
 
 在CMake中,我们可以通过`STRLESS`(小于)、`STREQUAL`(等于)、`STRGREATER`(大于)来进行字符串的比较,从而确定不同的编译选择。
 
 1. CMakeLists.txt的示例
-```c
+```cmake
 cmake_minimum_required(VERSION 3.0)
 project(CMakeDemo4)
 if(${PREV_VALUE} STRLESS ${CUR_VALUE})
@@ -113,17 +113,17 @@ endif()
 
 2. `cmake ..`的默认编译
 
-![String_default](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的String比较之默认情况.jpg)
+![String_default](https://www.dennisthink.com/image/2020/10/CMake的String比较之默认情况.jpg)
 
 3. `cmake .. -DPREV_VALUE=A -DCUR_VALUE=B`的输出(STRLESS)
 
-![String_STRLESSS](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的String比较之STRLESS.jpg)
+![String_STRLESSS](https://www.dennisthink.com/image/2020/10/CMake的String比较之STRLESS.jpg)
 
 4. `cmake .. -DPREV_VALUE=B -DCUR_VALUE=B`的输出结果(STREQUAL)
 
-![](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的String比较之STREQUAL.jpg)
+![](https://www.dennisthink.com/image/2020/10/CMake的String比较之STREQUAL.jpg)
 
 5. `cmake .. -DPREV_VALUE=B -DCUR_VALUE=A`的输出结果(STRGREATER)
-![](https://www.dennisthink.com/wp-content/uploads/2020/10/CMake的String比较之STRGREATER.jpg)
+![](https://www.dennisthink.com/image/2020/10/CMake的String比较之STRGREATER.jpg)
 
 以上就是对CMake的条件编译的简单介绍,如果有什么遗漏或者错误的地方,欢迎大家指出。

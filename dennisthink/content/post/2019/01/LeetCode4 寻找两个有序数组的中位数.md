@@ -42,7 +42,7 @@ nums2 = [3, 4]
 
 ### 3.1 思路1
 
-```c
+```cpp
 class Solution {
 public:
     double findMedianSortedArrays(vector int>& nums1, vector int>& nums2) {
@@ -56,10 +56,10 @@ public:
         }
         int index1 = 0;
         int index2 = 0;
-        std::vector int> resultVec;
-        while(index1   nums1.size() && index2   nums2.size())
+        std::vector<int> resultVec;
+        while(index1  < nums1.size() && index2 <  nums2.size())
         {
-            if(nums1[index1]  = nums2[index2])
+            if(nums1[index1]  <= nums2[index2])
             {
                 resultVec.push_back(nums1[index1]);
                 index1++;
@@ -71,13 +71,13 @@ public:
             }
         }
 
-        while(index1   nums1.size())
+        while(index1  < nums1.size())
         {
             resultVec.push_back(nums1[index1]);
             index1++;
         }
 
-        while(index2   nums2.size())
+        while(index2 <  nums2.size())
         {
             resultVec.push_back(nums2[index2]);
             index2++;

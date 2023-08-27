@@ -15,17 +15,17 @@ mathjax: false
 ```cpp {linenos=tables} 
 void PointerOverLoad(int x)
 {
-    std::cout  "int Function"  x  std::endl;
+    std::cout << "int Function"<<  x  <<std::endl;
 }
 
 void PointerOverLoad(bool x)
 {
-    std::cout  "bool function"  x  std::endl;
+    std::cout<<  "bool function" << x  <<std::endl;
 }
 
 void PointerOverLoad(void * x)
 {
-    std::cout  "void pointer function"  x  std::endl;
+    std::cout << "void pointer function"<<  x << std::endl;
 }
 ``` 
 
@@ -52,27 +52,27 @@ nullptr可以和0进行区分,实现不同的函数调用.
 ### 2. 返回值的比较方便区分不同的返回值类型
 函数声明:
 
-``` 
+```cpp
 std::shared_ptr int> GetIntPointer()
 {
-    return std::make_shared int>(0);
+    return std::make_shared<int>(0);
 }
 
 ``` 
 
 函数调用:
 
-``` 
+```cpp
 auto result = GetIntPointer();
 if( 0 == result)
 {
-    std::cout  "GetIntPointer failed"  std::endl;
+    std::cout << "GetIntPointer failed" << std::endl;
 }
 
 auto result2 = GetIntPointer();
 if( nullptr == result2)
 {
-    std::cout  "GetIntPointer failed"  std::endl;
+    std::cout  <<"GetIntPointer failed"  <<std::endl;
 }
 ``` 
 
@@ -88,71 +88,71 @@ if( nullptr == result2)
 
 函数声明:
 
-``` 
+```cpp 
 int IntFunc(std::shared_ptr int> spi)
 {
-    std::cout  "Int Func"  spi  std::endl;
+    std::cout << "Int Func" << spi << std::endl;
     return 0;
 }
 
 double IntFuncUniq(std::unique_ptr int> upi)
 {
-    std::cout  "Unique ptr"  upi.get()  std::endl;
+    std::cout << "Unique ptr" << upi.get()<<  std::endl;
     return 0.0;
 }
 
 bool IntFuncPtr(int * ptr)
 {
-    std::cout  "IntFuncPtr"  ptr  std::endl;
+    std::cout << "IntFuncPtr" << ptr << std::endl;
     return false;
 }
 ``` 
 
 无法区分错误的函数调用:
 
-``` 
+```cpp 
 std::mutex f1m;
 std::mutex f2m;
 std::mutex f3m;
-using MuxGuard = std::lock_guard std::mutex>;
+using MuxGuard = std::lock_guard<std::mutex>;
 {
     MuxGuard g(f1m);
     auto result = IntFunc(0);
-    std::cout  result  std::endl;
+    std::cout << result << std::endl;
 }
 
 
 {
     MuxGuard g(f2m);
     auto result = IntFuncUniq(NULL);
-    std::cout  result  std::endl;
+    std::cout << result<<  std::endl;
 }
 
 
 {
     MuxGuard g(f3m);
     auto result = IntFuncPtr(nullptr);
-    std::cout  result  std::endl;
+    std::cout<<  result<<  std::endl;
 }
 ``` 
 
 使用模板类型区分错误调用:
 
-``` 
-template typename FuncType,
+```cpp
+template <typename FuncType,
          typename MuxType,
          typename PtrType>
 auto lockAndCall(FuncType func,
                  MuxType&  mutx,
                  PtrType  ptr)
 {
-    using MuxGuard = std::lock_guard MuxType>;
+    using MuxGuard = std::lock_guard<MuxType>;
     MuxGuard g(mutx);
     return func(ptr);
 }
 ``` 
 
-``` 
+```cpp 
 auto result1 = lockAndCall(IntFunc,f1m,0);
 
 auto result2 = lockAndCall(IntFuncUniq,f2m,NULL);
@@ -162,7 +162,7 @@ auto result3 = lockAndCall(IntFuncPtr,f3m,nullptr);
 
 编译结果:
 
-```
+```console
 error: ‘void result1’ has incomplete type
   auto result1 = lockAndCall(IntFunc,f1m,0);
 

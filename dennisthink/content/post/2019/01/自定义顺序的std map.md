@@ -23,7 +23,7 @@ class CLessCmp
 public:
     bool operator()(int x,int y)
     {
-        return x   y;
+        return x < y;
     }
 };
 
@@ -55,7 +55,7 @@ int main(int argc,char * argv[])
         defaultMap.insert(std::pair<int,int>(item,item));
     }
 
-    std::cout  "Default Map  "  std::endl;
+    std::cout << "Default Map  " << std::endl;
     for(const auto& item:defaultMap)
     {
         std::cout<<item.first<<"\t";

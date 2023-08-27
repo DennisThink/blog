@@ -25,7 +25,7 @@ DEFINE_CONDITION、UN_DEFINE_CONDITION、DEBUG_LOG、DEBUG_LOG_DEFINED、DEFINE_
 
 1. CMake的代码示例
 
-```c
+```cmake
 cmake_minimum_required(VERSION 3.0)
 project(CMakeCppDefineLearn)
 if(DEFINED DEFINE_CONDITION_SWITCH)
@@ -154,12 +154,12 @@ return 0;
 (1) DEFINE_CONDITION定义了
 CMake条件编译指令`cmake .. -DDEFINE_CONDITION_SWTICH=ON`
 程序运行结果
-![DEFINE_CONDITION_GOOD](https://www.dennisthink.com/wp-content/uploads/2020/10/DEFINED_CONDITION_GOOD.jpg)
+![DEFINE_CONDITION_GOOD](https://www.dennisthink.com/image/2020/10/DEFINED_CONDITION_GOOD.jpg)
 
 (2) DEFINE_CONDITION未定义
 CMake条件编译指令`cmake .. -DDEFINE_CONDITION_SWTICH=OFF`
 程序运行结果
-![DEFINE_CONDITION_BAD](https://www.dennisthink.com/wp-content/uploads/2020/10/DEFINED_CONDITION_BAD.jpg)
+![DEFINE_CONDITION_BAD](https://www.dennisthink.com/image/2020/10/DEFINED_CONDITION_BAD.jpg)
 
 
 3. UN_DEFINE_CONDITION宏相关
@@ -167,12 +167,12 @@ CMake条件编译指令`cmake .. -DDEFINE_CONDITION_SWTICH=OFF`
 (1) UN_DEFINE_CONDITION定义了
 CMake条件编译指令`cmake .. -DUN_DEFINE_CONDITION_SWTICH=ON`
 程序运行结果
-![UN_DEFINE_CONDITION_GOOD](https://www.dennisthink.com/wp-content/uploads/2020/10/UN_DEFINE_CONDITION_GOOD.jpg)
+![UN_DEFINE_CONDITION_GOOD](https://www.dennisthink.com/image/2020/10/UN_DEFINE_CONDITION_GOOD.jpg)
 
 (2) DEFINE_CONDITION未定义
 CMake条件编译指令`cmake .. -DUN_DEFINE_CONDITION_SWTICH=OFF`
 程序运行结果
-![UN_DEFINE_CONDITION_BAD](https://www.dennisthink.com/wp-content/uploads/2020/10/UN_DEFINE_CONDITION_BAD.jpg)
+![UN_DEFINE_CONDITION_BAD](https://www.dennisthink.com/image/2020/10/UN_DEFINE_CONDITION_BAD.jpg)
 
 4. DEBUG_LOG宏相关
 (1) DEBUG_LOG定义了
@@ -180,7 +180,7 @@ CMake条件编译指令`cmake .. -DUN_DEFINE_CONDITION_SWTICH=OFF`
 CMake条件编译指令`cmake .. -DDEBUG_LOG_SWITCH=ON`
 
 程序运行结果
-![DEBUG_LOG_DEFINED](https://www.dennisthink.com/wp-content/uploads/2020/10/DEBUG_LOG_DEFINED.jpg)
+![DEBUG_LOG_DEFINED](https://www.dennisthink.com/image/2020/10/DEBUG_LOG_DEFINED.jpg)
 
 (2) DEBUG_LOG未定义
 
@@ -188,46 +188,46 @@ CMake条件编译指令`cmake .. -DDEBUG_LOG_SWITCH=ON`
 CMake条件编译指令`cmake .. -DDEBUG_LOG_SWITCH=OFF`
 
 程序运行结果
-![DEBUG_LOG_NOT_DEFINED](https://www.dennisthink.com/wp-content/uploads/2020/10/DEBUG_LOG_DEFINED_NOT.jpg)
+![DEBUG_LOG_NOT_DEFINED](https://www.dennisthink.com/image/2020/10/DEBUG_LOG_DEFINED_NOT.jpg)
 
 5.  DEBUG_LOG_DEFINED宏相关
 (1) DEBUG_LOG_DEFINED定义了
 CMake条件编译指令``
 程序运行结果
-![DEBUG_LOG_DEFINED](https://www.dennisthink.com/wp-content/uploads/2020/10/DEBUG_LOG_DEFINED.jpg)
+![DEBUG_LOG_DEFINED](https://www.dennisthink.com/image/2020/10/DEBUG_LOG_DEFINED.jpg)
 
 (2) DEBUG_LOG_DEFINED未定义
 CMake条件编译指令``
 程序运行结果
-![DEBUG_LOG_DEFINED_NOT](https://www.dennisthink.com/wp-content/uploads/2020/10/DEBUG_LOG_DEFINED_NOT.jpg)
+![DEBUG_LOG_DEFINED_NOT](https://www.dennisthink.com/image/2020/10/DEBUG_LOG_DEFINED_NOT.jpg)
 
 6. DEFINE_FIRST和DEFINE_SECOND宏相关
 
 (1) DEFINE_FIRST和DEFINE_SECOND宏同时定义了
 CMake条件编译指令`cmake .. -DDEFINE_FIRST_SWITCH=ON -DDEFINE_SECOND_SWITCH=ON`
 程序运行结果
-![DEFINE_FIRST_SECOND_GOOD](https://www.dennisthink.com/wp-content/uploads/2020/10/DEFINE_FIRST_SECOND_GOOD.jpg)
+![DEFINE_FIRST_SECOND_GOOD](https://www.dennisthink.com/image/2020/10/DEFINE_FIRST_SECOND_GOOD.jpg)
 
 (1) DEFINE_FIRST和DEFINE_SECOND未同时定义
 CMake条件编译指令`cmake .. -DDEFINE_FIRST_SWITCH=OFF -DDEFINE_SECOND_SWITCH=OFF`
 程序运行结果
-![DEFINE_FIRST_SECOND_BAD](https://www.dennisthink.com/wp-content/uploads/2020/10/DEFINE_FIRST_SECOND_BAD.jpg)
+![DEFINE_FIRST_SECOND_BAD](https://www.dennisthink.com/image/2020/10/DEFINE_FIRST_SECOND_BAD.jpg)
 
 7. DEFINE_THIRD和DEFINE_FOURTH宏相关
 
 (2) DEFINE_THIRD和DEFINE_FOURTH未定义
 CMake条件编译指令`cmake .. -DDEFINE_THIRD_SWITCH=OFF -DDEFINE_FOURTH_SWITCH=OFF`
 程序运行结果
-![NOT_DEFINE_THIRD_FOURTH_EITHER](https://www.dennisthink.com/wp-content/uploads/2020/10/NOT_DEFINE_THIRD_FOURTH_EITHER.jpg)
+![NOT_DEFINE_THIRD_FOURTH_EITHER](https://www.dennisthink.com/image/2020/10/NOT_DEFINE_THIRD_FOURTH_EITHER.jpg)
 
 (2) DEFINE_THIRD定义了
 CMake条件编译指令`cmake .. -DDEFINE_THIRD_SWITCH=ON`
 程序运行结果
-![DEFINE_THIRD_GOOD](https://www.dennisthink.com/wp-content/uploads/2020/10/DEFINE_THIRD_GOOD.jpg)
+![DEFINE_THIRD_GOOD](https://www.dennisthink.com/image/2020/10/DEFINE_THIRD_GOOD.jpg)
 
 (2) DEFINE_FOURTH定义了
 CMake条件编译指令`cmake .. -DDEFINE_FOURTH_SWITCH=ON`
 程序运行结果
-![DEFINE_FOURTH_GOOD](https://www.dennisthink.com/wp-content/uploads/2020/10/DEFINE_FOURTH_GOOD.jpg)
+![DEFINE_FOURTH_GOOD](https://www.dennisthink.com/image/2020/10/DEFINE_FOURTH_GOOD.jpg)
 
 以上就是我的所有测试结果,如果有不完善的地方,欢迎在评论区留言交流。

@@ -89,7 +89,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   name = "关于"
   weight = 50
   identifier = "about"
-  pageref = "/about/"
+  pageref = "/about"
 
 
 [params]

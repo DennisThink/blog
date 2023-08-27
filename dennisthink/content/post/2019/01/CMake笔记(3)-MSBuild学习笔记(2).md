@@ -18,7 +18,7 @@ mathjax: false
 4. mulClassStatic 乘法运算静态库,静态导出类
 5. subShared 减法运算的动态库，导出为函数
 
-整体目录结构图:![CMakeDemo2_Tree.png](https://www.dennisthink.com/wp-content/uploads/2019/04/CMakeDemo2_Tree.png")
+整体目录结构图:![CMakeDemo2_Tree.png](https://www.dennisthink.com/image/2019/04/CMakeDemo2_Tree.png")
 
 ## 2. 编译脚本和编译效果 
 
@@ -46,7 +46,7 @@ pause
 ```
 
 
-编译效果:![Compile_32_GIF_Demo2.gif](https://www.dennisthink.com/wp-content/uploads/2019/04/Compile_32_GIF_Demo2.gif)
+编译效果:![Compile_32_GIF_Demo2.gif](https://www.dennisthink.com/image/2019/04/Compile_32_GIF_Demo2.gif)
 
 ### 2.2 64位编译脚本
 
@@ -70,7 +70,7 @@ pause
 ```
 
 
-编译效果:![](https://www.dennisthink.com/wp-content/uploads/2019/04/Compile_64_GIF_Demo2.gif)
+编译效果:![](https://www.dennisthink.com/image/2019/04/Compile_64_GIF_Demo2.gif)
 
 ## 3. 具体内容介绍 
 
@@ -211,22 +211,22 @@ add_executable(Main ${SOURCE_FILE})
 
 main.cpp
 
-```
-#include  iostream>
+```cpp
+#include <iostream>
 #include "Add.h"
 #include "Sub.h"
 #include "mulClass.h"
 #include "divClass.h"
 int main(int argc,char * argv[])
 {
-    std::cout  "CMakeDemo2"  std::endl;
-    std::cout  argc  "    "  argv[0]  std::endl;
-    std::cout  "Add: "  Add(3,2)  std::endl;
-    std::cout  "Sub: "  Sub(4,2)  std::endl;
+    std::cout << "CMakeDemo2"  <<std::endl;
+    std::cout << argc  "    "  <<argv[0] << std::endl;
+    std::cout << "Add: " << Add(3,2)  <<std::endl;
+    std::cout << "Sub: "<<  Sub(4,2) << std::endl;
     CMulClass mulUtil;
-    std::cout  "Mul: "  mulUtil.Mul(2,8)  std::endl;
+    std::cout << "Mul: "<<  mulUtil.Mul(2,8) << std::endl;
     CDivClass divUtil;
-    std::cout  "Div: "  divUtil.Div(8,4)  std::endl;
+    std::cout  <<"Div: " << divUtil.Div(8,4)<<  std::endl;
     return 0;
 }
 ```
@@ -274,7 +274,7 @@ public:
 
 mulClass.cpp
 
-```c
+```cpp
 #include "mulClass.h"
 int CMulClass::Mul(int x,int y)
 {
@@ -315,7 +315,7 @@ add_library(subShared ${SUB_SOURCE_FILE})
 
 Sub.h
 
-```
+```cpp
 #ifndef _CMAKE_DEMO2_SUB_SHARED_H_
 #define _CMAKE_DEMO2_SUB_SHARED_H_
 #define DllExport   __declspec(dllexport)
@@ -326,7 +326,8 @@ int DllExport Sub(int x,int y);
 
 Sub.cpp
 
-```#include "Sub.h"
+```cpp
+#include "Sub.h"
 int Sub(int x,int y)
 {
     return x-y;

@@ -32,56 +32,56 @@ int main(int argc,char * argv[])
     const auto& crx = x;
     auto& rx = x;
 
-    std::cout   "x Type is "  type_id_with_cvr decltype(x)>().pretty_name()  std::endl;
-    std::cout   "cx Type is "  type_id_with_cvr decltype(cx)>().pretty_name()  std::endl;
-    std::cout   "crx Type is "  type_id_with_cvr decltype(crx)>().pretty_name()  std::endl;
-    std::cout   "rx Type is "  type_id_with_cvr decltype(rx)>().pretty_name()  std::endl;
+    std::cout  << "x Type is " << type_id_with_cvr<decltype(x)>().pretty_name() << std::endl;
+    std::cout  << "cx Type is " << type_id_with_cvr<decltype(cx)>().pretty_name() << std::endl;
+    std::cout  << "crx Type is " << type_id_with_cvr<decltype(crx)>().pretty_name() << std::endl;
+    std::cout  << "rx Type is " << type_id_with_cvr<decltype(rx)>().pretty_name()  <<std::endl;
 
     auto&& uref1 = x;
     auto&& uref2 = cx;
     auto&& uref3 = rx;
 
-    std::cout   "uref1 Type is "  type_id_with_cvr decltype(uref1)>().pretty_name()  std::endl;
-    std::cout   "uref2 Type is "  type_id_with_cvr decltype(uref2)>().pretty_name()  std::endl;
-    std::cout   "uref3 Type is "  type_id_with_cvr decltype(uref3)>().pretty_name()  std::endl;
+    std::cout  << "uref1 Type is " << type_id_with_cvr<decltype(uref1)>().pretty_name() << std::endl;
+    std::cout  << "uref2 Type is " << type_id_with_cvr<decltype(uref2)>().pretty_name() << std::endl;
+    std::cout  << "uref3 Type is " << type_id_with_cvr<decltype(uref3)>().pretty_name() << std::endl;
 
     const char name[]="Hello Dennis";
     auto arr1 = name;
     auto& arr2 = name;
 
-    std::cout   "name Type is "  type_id_with_cvr decltype(name)>().pretty_name()  std::endl;
-    std::cout   "arr1 Type is "  type_id_with_cvr decltype(arr1)>().pretty_name()  std::endl;
-    std::cout   "arr2 Type is "  type_id_with_cvr decltype(arr2)>().pretty_name()  std::endl;
+    std::cout  << "name Type is " << type_id_with_cvr<decltype(name)>().pretty_name() << std::endl;
+    std::cout  << "arr1 Type is " << type_id_with_cvr <decltype(arr1)>().pretty_name() << std::endl;
+    std::cout <<  "arr2 Type is " << type_id_with_cvr<decltype(arr2)>().pretty_name() << std::endl;
 
     auto func1 = func;
     auto& func2 = func;
 
     auto lamdaFunc = []()->void {return;};
 
-    std::cout   "func1 Type is "  type_id_with_cvr decltype(func)>().pretty_name()  std::endl;
-    std::cout   "func1 Type is "  type_id_with_cvr decltype(func1)>().pretty_name()  std::endl;
-    std::cout   "func2 Type is "  type_id_with_cvr decltype(func2)>().pretty_name()  std::endl;
-    std::cout   "lamdaFunc Type is "  type_id_with_cvr decltype(lamdaFunc)>().pretty_name()  std::endl;
+    std::cout <<  "func1 Type is "  <<type_id_with_cvr<decltype(func)>().pretty_name() << std::endl;
+    std::cout  << "func1 Type is " << type_id_with_cvr<decltype(func1)>().pretty_name() << std::endl;
+    std::cout <<  "func2 Type is "  <<type_id_with_cvr<decltype(func2)>().pretty_name() << std::endl;
+    std::cout  << "lamdaFunc Type is "<<  type_id_with_cvr<decltype(lamdaFunc)>().pretty_name() << std::endl;
 
     int x1 = 27;
     int x2(27);
     int x3={27};
     int x4{27};
 
-    std::cout   "x1 Type is "  type_id_with_cvr decltype(x1)>().pretty_name()  std::endl;
-    std::cout   "x2 Type is "  type_id_with_cvr decltype(x2)>().pretty_name()  std::endl;
-    std::cout   "x3 Type is "  type_id_with_cvr decltype(x3)>().pretty_name()  std::endl;
-    std::cout   "x4 Type is "  type_id_with_cvr decltype(x4)>().pretty_name()  std::endl;
+    std::cout  << "x1 Type is " << type_id_with_cvr<decltype(x1)>().pretty_name()  <<std::endl;
+    std::cout  << "x2 Type is " << type_id_with_cvr<decltype(x2)>().pretty_name()  <<std::endl;
+    std::cout <<  "x3 Type is " << type_id_with_cvr<decltype(x3)>().pretty_name() << std::endl;
+    std::cout   <<"x4 Type is "<<  type_id_with_cvr<decltype(x4)>().pretty_name() << std::endl;
 
     auto ax1 = 27;
     auto ax2(27);
     auto ax3={27};
     auto ax4{27};
 
-    std::cout   "ax1 Type is "  type_id_with_cvr decltype(ax1)>().pretty_name()  std::endl;
-    std::cout   "ax2 Type is "  type_id_with_cvr decltype(ax2)>().pretty_name()  std::endl;
-    std::cout   "ax3 Type is "  type_id_with_cvr decltype(ax3)>().pretty_name()  std::endl;
-    std::cout   "ax4 Type is "  type_id_with_cvr decltype(ax4)>().pretty_name()  std::endl;
+    std::cout  << "ax1 Type is " << type_id_with_cvr<decltype(ax1)>().pretty_name() << std::endl;
+    std::cout <<  "ax2 Type is " << type_id_with_cvr<decltype(ax2)>().pretty_name() << std::endl;
+    std::cout <<  "ax3 Type is " << type_id_with_cvr<decltype(ax3)>().pretty_name() << std::endl;
+    std::cout  <<"ax4 Type is "  <<type_id_with_cvr<decltype(ax4)>().pretty_name() << std::endl;
 
     return 0;
 }
@@ -126,7 +126,7 @@ ax4 Type is int
 
 ```cpp {linenos=table}
 //代码1
-template typename T>
+template<typename T>
 void func(T param)
 {
 }

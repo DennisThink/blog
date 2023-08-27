@@ -11,7 +11,7 @@ mathjax: false
 
 java的静态块在整个运行过程中只执行一次，所有的情况如下所示。
 代码的目录结构如下所示。
-![]("https://www.dennisthink.com/wp-content/uploads/2019/01/file_struct.png)
+![]("https://www.dennisthink.com/image/2019/01/file_struct.png)
 
 ## 1.基础代码
 Parent.java
@@ -122,7 +122,7 @@ public class One {
   java One
 
 程序的输出:
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/one_result.png)
+![](https://www.dennisthink.com/image/2019/01/one_result.png)
 
 分析:
 1. 从输出的情况可以看出，对于静态代码块，仅执行一次。
@@ -155,7 +155,7 @@ public class Two{
   java Two
 
 
-程序输出:![](https://www.dennisthink.com/wp-content/uploads/2019/01/two_result.png)
+程序输出:![](https://www.dennisthink.com/image/2019/01/two_result.png)
 
 Three.java
 
@@ -176,7 +176,7 @@ public class Three{
   javac Three.java
   java Three
 
-程序输出:![](https://www.dennisthink.com/wp-content/uploads/2019/01/three_result.png)
+程序输出:![](https://www.dennisthink.com/image/2019/01/three_result.png)
 
 Four.java
 
@@ -196,7 +196,7 @@ public class Four{
 > javac Four.java
   java Four
 
-程序输出:![](https://www.dennisthink.com/wp-content/uploads/2019/01/four_result-1.png)
+程序输出:![](https://www.dennisthink.com/image/2019/01/four_result-1.png)
 
 结果分析:
 1. 调用类的静态方法，会执行类的静态代码块。
@@ -226,7 +226,7 @@ public class Five{
 java Five
 
 
-程序的输出:![](https://www.dennisthink.com/wp-content/uploads/2019/01/five_result.png)
+程序的输出:![](https://www.dennisthink.com/image/2019/01/five_result.png)
 
 示例2
 Six.java
@@ -248,7 +248,7 @@ public class Six{
 java Six
 
 
-程序的输出:![](https://www.dennisthink.com/wp-content/uploads/2019/01/six_result.png)
+程序的输出:![](https://www.dennisthink.com/image/2019/01/six_result.png)
 
 结果分析:
 1. 引用类的静态变量，会执行类的静态代码块。
@@ -277,7 +277,7 @@ Seven.java
    java Seven
 
 
-执行的结果:![](https://www.dennisthink.com/wp-content/uploads/2019/01/seven_result.png)
+执行的结果:![](https://www.dennisthink.com/image/2019/01/seven_result.png)
 
 反射超类
 Eight.java
@@ -300,7 +300,7 @@ public class Eight{
 > javac Eight.java      
   java Eight
 
-执行的结果:![](https://www.dennisthink.com/wp-content/uploads/2019/01/eight_result.png)
+执行的结果:![](https://www.dennisthink.com/image/2019/01/eight_result.png)
 结果分析:
 1. 反射某个类，会执行该类的静态代码块。
 2. 反射子类，会先执行超类的静态代码块，后执行子类的静态代码块。

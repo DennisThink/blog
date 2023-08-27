@@ -11,7 +11,7 @@ mathjax: false
 
 ## 一.
 
-```
+```cmake
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin) 
 ```
 
@@ -23,7 +23,7 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
 
 ## 二.
 
-```
+```cmake
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../lib) 
 ```
 
@@ -35,7 +35,7 @@ SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../lib)
 
 ### 三.
 
-```
+```cmake
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/../bin)     
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/../bin) 
 ```
@@ -45,7 +45,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/../bin)
 一旦设置上面的属性,在任何环境下生成的可执行文件都将直接放在你所设置的目录.
 
 ##　四.
-```set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/../lib)    
+```cmake
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/../lib)    
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/../lib) 
 ```
 
@@ -55,7 +56,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/../lib)
 
 ## 五.
 
-```
+```cmake
 set(CMAKE_DEBUG_POSTFIX "_d")    
 set(CMAKE_RELEASE_POSTFIX "_r") 
 ```
@@ -63,7 +64,7 @@ set(CMAKE_RELEASE_POSTFIX "_r")
 上面两条语句分别设置了Debug版本和Release版本下库文件的后缀名.
 
 ## 六.
-```
+```cmake
 set_target_properties(${TARGET_NAME} PROPERTIES DEBUG_POSTFIX "_d")     
 set_target_properties(${TARGET_NAME} PROPERTIES RELEASE_POSTFIX "_r") 
 ```

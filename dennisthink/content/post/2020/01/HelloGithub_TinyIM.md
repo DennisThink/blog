@@ -29,5 +29,4 @@ mathjax: false
 - 推荐理由：跨平台、可选GUI实现、支持机器人开发。
 
 - 截图：机器人和GUI聊天的一个示例
-  ![机器人聊天演示](https://www.dennisthink.com/wp-content/uploads/2020/01/2020-12-31_183552.jpg)
-
+  ![机器人聊天演示](https://www.dennisthink.com/image/2020/01/2020-12-31_183552.jpg)

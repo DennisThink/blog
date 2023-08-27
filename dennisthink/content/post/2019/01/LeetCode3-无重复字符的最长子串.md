@@ -82,7 +82,7 @@ public:
         int nResult = 0;
         std::string strFind;
         int nLen = s.length();
-        for(int index = 0; index   nLen; index++)
+        for(int index = 0; index  < nLen; index++)
         {
             for(int j = index+1; j  = nLen ; j++)
             {

@@ -39,20 +39,20 @@ public:
 };
 
 void autoLamda() {
-    auto printFunc = [](const std::unique_ptr Widget>& lhs,
-                        const std::unique_ptr Widget>& rhs)->bool {
+    auto printFunc = [](const std::unique_ptr<Widget>& lhs,
+                        const std::unique_ptr<Widget>& rhs)->bool {
                             return *lhs   * rhs;
                         };
-    printFunc(std::make_unique Widget>(),std::make_unique Widget>());
+    printFunc(std::make_unique<Widget>(),std::make_unique<Widget>());
 }
 
-std::function bool(const std::unique_ptr Widget>& lhs,const std::unique_ptr Widget>& rhs)> notAutoFunc = [](const std::unique_ptr Widget>& lhs,
-                        const std::unique_ptr Widget>& rhs)->bool {
+std::function bool(const std::unique_ptr<Widget>& lhs,const std::unique_ptr <Widget>& rhs)> notAutoFunc = [](const std::unique_ptr<Widget>& lhs,
+                        const std::unique_ptr<Widget>& rhs)->bool {
                             return *lhs   * rhs;
                         };
 
 void notAutoLamda(){
-    notAutoFunc(std::make_unique Widget>(),std::make_unique Widget>());
+    notAutoFunc(std::make_unique<Widget>(),std::make_unique<Widget>());
 }
 ```
 
@@ -63,7 +63,7 @@ void notAutoLamda(){
 ```cpp {linenos=table}
 void AutoVector()
 {
-    std::vector Widget> intVector;
+    std::vector<Widget> intVector;
     auto count = intVector.size();
 
     for(const auto& it:intVector){
@@ -73,10 +73,10 @@ void AutoVector()
 
 void NormalVector()
 {
-    std::vector Widget> intVector;
+    std::vector<Widget> intVector;
     std::size_t count = intVector.size();
 
-    for(std::vector Widget>::iterator it = intVector.begin() ;
+    for(std::vector<Widget>::iterator it = intVector.begin() ;
         it != intVector.end();
         ++it)
     {

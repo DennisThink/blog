@@ -36,7 +36,7 @@ string convert(string s, int numRows);
 输出: "LDREOEIIECIHNTSG"
 解释:
 
-```
+```console
 L     D     R
 E   O E   I I
 E C   I H   N
@@ -51,10 +51,10 @@ T     S     G
 
 #### 2.1.1 观察1    
 
-```
+
 比如输入字符串为 "LEETCODEISHIRING" 行数为 3 时，排列如
 
-```
+```console
 0,     4,    8,     12     (0,{4}) 4=2*3-2
 1, [3],5,[7],9,[11],13 15  (1,3,{4})
 2,     6,    10,    14,    (2,{4})
@@ -68,7 +68,7 @@ T     S     G
 
 观察行数为 *4*的分组
 
-```
+```console
 0,     6,      12, (0,{6}) 6=2*[4]-2
 1,  5, 7,  ,11,13, (1,5,{6})
 2,4,   8,10,   14, (2,4,{6})
@@ -83,13 +83,13 @@ T     S     G
 
 观察行数为 *5*的分组
 
-```
+```console
 0,       8,         16, (0,{8}) 8=2*[5]-2
 1,    7, 9,      15,17, (1,7,{8})
 2,  6,   10,  14,   18, (2,6,{8})
 3,5      11,13      19, (3,5,{8})
 4,       12,            (4,{8})
- ```
+```
 
 可以得出结论:
 1. 行数为5的时候，间隔为8
@@ -116,14 +116,14 @@ public:
         const int nStep = 2*numRows-2;
         std::string strResult;
         //对每一行进行处理
-        for(int index = 0; index   numRows ; index++)
+        for(int index = 0; index < numRows ; index++)
         {
             int nFirst = index;
             int nSecond = nStep-nFirst;
             //第一行或者最后一行
             if(nFirst == 0 || nFirst == numRows-1)
             {
-                while(nFirst   s.length())
+                while(nFirst  < s.length())
                 {
                     strResult+=s[nFirst];
                     nFirst+=nStep;
@@ -132,22 +132,22 @@ public:
             else
             {
                 //处理中间的行
-                while(nSecond   s.length())
+                while(nSecond < s.length())
                 {
                     //第一个开始索引
-                    if(nFirst   s.length())
+                    if(nFirst  < s.length())
                     {
                         strResult+=s[nFirst];
                         nFirst+=nStep;
                     }
                     //第二个开始索引
-                    if(nSecond   s.length())
+                    if(nSecond  < s.length())
                     {
                         strResult+=s[nSecond];
                         nSecond+=nStep;
                     }
                 }
-                while(nFirst   s.length())
+                while(nFirst  < s.length())
                 {
                     strResult+=s[nFirst];
                     nFirst+=nStep;
@@ -157,4 +157,4 @@ public:
         return strResult;
     }
 };
- ```
+```

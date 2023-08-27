@@ -11,7 +11,7 @@ mathjax: false
 
 java的```public class```  的名称要和文件的名称保持一致。
 
-所有示例的整体目录结构如下:![](https://www.dennisthink.com/wp-content/uploads/2019/01/folder_struct.png)
+所有示例的整体目录结构如下:![](https://www.dennisthink.com/image/2019/01/folder_struct.png)
 
 ## 1. 不带package的最简单的示例
 
@@ -26,7 +26,7 @@ public class MainFirst
 }
 ```
 
-在ch0目录下运行的结果![](https://www.dennisthink.com/wp-content/uploads/2019/01/One_ch0.png)
+在ch0目录下运行的结果![](https://www.dennisthink.com/image/2019/01/One_ch0.png)
 
 ## 2. 带package的示例
 
@@ -42,10 +42,10 @@ public class MainTwo{
 ```
 
 在ch0目录运行
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/two_ch0.png)
+![](https://www.dennisthink.com/image/2019/01/two_ch0.png)
 
 在Two目录运行
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/Two_Two.png)
+![](https://www.dennisthink.com/image/2019/01/Two_Two.png)
 
 ## 3. 带package引用同一个package
 
@@ -75,9 +75,9 @@ public class MainThree{
 ```
 
 在ch0目录下
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/three_ch0.png)
+![](https://www.dennisthink.com/image/2019/01/three_ch0.png)
 在three目录下
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/three_three.png)
+![](https://www.dennisthink.com/image/2019/01/three_three.png)
 
 ## 4. 使用-d参数
 
@@ -114,10 +114,10 @@ public class TestMain{
 ```
 
 在ch0目录运行
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/Four__Test_ch0.png)
+![](https://www.dennisthink.com/image/2019/01/Four__Test_ch0.png)
 
 在Four目录运行
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/Four_four.png)
+![](https://www.dennisthink.com/image/2019/01/Four_four.png)
 
 在Dst目录运行
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/Four_dst.png)
+![](https://www.dennisthink.com/image/2019/01/Four_dst.png)

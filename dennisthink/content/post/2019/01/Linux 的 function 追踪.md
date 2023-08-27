@@ -3,6 +3,7 @@ title: Linux 的 function 追踪.md
 date: 2019-01-20T21:38:52+08:00
 lastmod: 2019-01-28T21:41:52+08:00
 # you can close something for this content if you open it in config.toml.
+tags: ["linux"]
 comment: true
 mathjax: false
 ---
@@ -11,18 +12,18 @@ mathjax: false
 
 在学习开源代码或者接触到老项目的时候，对于复杂的函数调用流程，往往会感觉晕头转向。这个时候如果能打印出函数的执行流程，对于我们了解项目会很有帮助，下面介绍一下在Linux下打印函数调用流程的技术。
 
-## 1. 使用gcc和g++的  code>-finstrument-functions ``` 选项    
+## 1. 使用gcc和g++的  ```-finstrument-functions ``` 选项    
 
--finstrument-functions 选项的意思是在函数的入口处自动的插入  code>__cyg_profile_func_enter ``` 在函数的出口自动加入  code>__cyg_profile_func_exit ```，通过自己实现这两个函数，就可以打印出调用流程了。
+-finstrument-functions 选项的意思是在函数的入口处自动的插入  ```__cyg_profile_func_enter ``` 在函数的出口自动加入  ```__cyg_profile_func_exit ```，通过自己实现这两个函数，就可以打印出调用流程了。
 
 ## 2. function_trace.c    
 
 实现的一个模板如下:
-
- pre> code class="language-C ">//function_trace.c
-#include  stdio.h>
+```c
+//function_trace.c
+#include  <stdio.h>
 #define __USE_GNU
-#include  dlfcn.h>
+#include  <dlfcn.h>
 static FILE *fp_trace=NULL;
 static int nDepth = 0;
 void  __cyg_profile_func_enter(void *func, void *caller) __attribute__((no_instrument_function));
@@ -84,9 +85,9 @@ void __cyg_profile_func_exit(void *func, void *caller) {
         printf("Leave:[%s,%s] \n",info.dli_fname,info.dli_sname);
     }
 }
- ``` /pre>
+```
 
- *编译命令 /*:
+ *编译命令*:
 
 ```
   gcc function_trace.c -c
@@ -97,8 +98,9 @@ void __cyg_profile_func_exit(void *func, void *caller) {
 
 functrace_main.cpp
 
- pre> code class="language-C ">//functrace_main.cpp 
-#include  stdio.h>
+```cpp
+//functrace_main.cpp 
+#include  <stdio.h>
 
 class CBase
 {
@@ -212,18 +214,18 @@ int main(int argc, char **argv) {
   }
   return 0;
 }
- ``` /pre>
-
- *编译命令 /*:
-
 ```
-  g++ -g function_trace.o functrace_main.cpp  -ldl -finstrument-functions -export-dynamic
+
+*编译命令*:
+
+```console
+g++ -g function_trace.o functrace_main.cpp  -ldl -finstrument-functions -export-dynamic
  ```
 
 
 ## 4 程序输出    
 
-```
+```console
 Enter:[./a.out,main]
 ----------------------------Drive override Test Begin
                 Enter:[./a.out,_ZN9CDriveOneC1Ev]
@@ -282,9 +284,9 @@ void Overload(int)
 
 输出分析:
 
-```
-  Enter:[./a.out,_ZN9CDriveOneC1Ev]   //派生类  code>CDriveOne ```的构造函数 br />
-  Enter:[./a.out,_ZN5CBaseC1Ev]   //父类  code>CBase ```的构造函数
-  Enter:[./a.out,_Z8Overloadv]    //调用  code>void Overload() ``` br />
-  Enter:[./a.out,_Z8Overloadi]    //调用  code>void Overload(int) ```
+```console
+  Enter:[./a.out,_ZN9CDriveOneC1Ev]   //派生类  ```CDriveOne ```的构造函数 br />
+  Enter:[./a.out,_ZN5CBaseC1Ev]   //父类  ```CBase ```的构造函数
+  Enter:[./a.out,_Z8Overloadv]    //调用  ```void Overload() ``` br />
+  Enter:[./a.out,_Z8Overloadi]    //调用  ```void Overload(int) ```
  ```

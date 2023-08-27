@@ -40,7 +40,7 @@ public class SingleJar{
 >
 
 执行的结果为:
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/one_singleJar.png)
+![](https://www.dennisthink.com/image/2019/01/one_singleJar.png)
 
 ### 2. 单文件使用Manifest
 
@@ -76,7 +76,7 @@ public class UseManifest{
 
 
 执行的结果:
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/use_manifest.png)
+![](https://www.dennisthink.com/image/2019/01/use_manifest.png)
 
 ### 3.使用Manifest带Package
 
@@ -123,7 +123,7 @@ public class Main{
 
 
 执行的结果:
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/three_use_manifest.png)
+![](https://www.dennisthink.com/image/2019/01/three_use_manifest.png)
 
 ### 4.带Package的编译
 
@@ -169,7 +169,7 @@ public class Main{
   java -jar four.jar                 
 
 执行的结果:
-![](https://www.dennisthink.com/wp-content/uploads/2019/01/four_result.png)
+![](https://www.dennisthink.com/image/2019/01/four_result.png)
 
 ### 5.使用Manifest打包jar
 

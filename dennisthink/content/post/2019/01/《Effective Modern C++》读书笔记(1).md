@@ -85,28 +85,28 @@ const int MAX_VALUE=500;
 
 int main(int argc,char * argv[])
 {
-    std::cout  "argc  "  argc   " argv "  argv[0]  std::endl;
-    std::cout  "GetCirsumByMacro "  GetCirclrCircumferenceMacro(2.0)  std::endl;
-    std::cout  "GetCirsumByConst "  GetCirclrCircumferenceConst(2.0)  std::endl;
+    std::cout<<  "argc  "  <<argc  << " argv " << argv[0]<<  std::endl;
+    std::cout<<  "GetCirsumByMacro " << GetCirclrCircumferenceMacro(2.0)  <<std::endl;
+    std::cout << "GetCirsumByConst " << GetCirclrCircumferenceConst(2.0) << std::endl;
 
     int a = 2;
     int b = 4;
     double c = 3.0;
-    std::cout  MACRO_MAX(c+c,MACRO_MAX(a+a,b+b))  std::endl;
-    std::cout  mymax(c+c,mymax(a+a,b+b))  std::endl;
+    std::cout << MACRO_MAX(c+c,MACRO_MAX(a+a,b+b)) << std::endl;
+    std::cout << mymax(c+c,mymax(a+a,b+b))<<  std::endl;
 
     char value = MAX_VALUE;
     char value2 = MACRO_MAX_VALUE;
 
-    std::cout  value  std::endl;
-    std::cout  value2  std::endl;  
+    std::cout << value << std::endl;
+    std::cout << value2 << std::endl;  
     return 0;
 }
 ```
 
 编译命令为:
 
-```
+```console
 g++ -Wextra ConstVsDefine.cpp 
 ```
 
