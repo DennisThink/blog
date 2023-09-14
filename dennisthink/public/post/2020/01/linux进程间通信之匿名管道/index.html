@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.109.0" />
+<meta name="generator" content="Hugo 0.117.0" />
 
 
 <link rel="canonical" href="https://www.dennisthink.com/post/2020/01/linux%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E5%8C%BF%E5%90%8D%E7%AE%A1%E9%81%93/" />
@@ -41,7 +41,7 @@
 
 
 
-<link rel="icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.png" />
 
 
 
@@ -65,13 +65,13 @@
 <meta property="og:description" content="Linux进程间通信之匿名管道 Linux的进程间可以使用匿名管道的方式进行通信,它的特点是: 匿名管道仅可在父子进程间使用 管道一般是半双工的工" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.dennisthink.com/post/2020/01/linux%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E5%8C%BF%E5%90%8D%E7%AE%A1%E9%81%93/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-01-20T21:38:52+08:00" />
-<meta property="article:modified_time" content="2019-01-28T21:41:52+08:00" />
+<meta property="article:published_time" content="2020-01-20T21:38:52+08:00" />
+<meta property="article:modified_time" content="2020-01-28T21:41:52+08:00" />
 <meta itemprop="name" content="Linux进程间通信之匿名管道">
-<meta itemprop="description" content="Linux进程间通信之匿名管道 Linux的进程间可以使用匿名管道的方式进行通信,它的特点是: 匿名管道仅可在父子进程间使用 管道一般是半双工的工"><meta itemprop="datePublished" content="2019-01-20T21:38:52+08:00" />
-<meta itemprop="dateModified" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="description" content="Linux进程间通信之匿名管道 Linux的进程间可以使用匿名管道的方式进行通信,它的特点是: 匿名管道仅可在父子进程间使用 管道一般是半双工的工"><meta itemprop="datePublished" content="2020-01-20T21:38:52+08:00" />
+<meta itemprop="dateModified" content="2020-01-28T21:41:52+08:00" />
 <meta itemprop="wordCount" content="433">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="linux,ipc," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux进程间通信之匿名管道"/>
 <meta name="twitter:description" content="Linux进程间通信之匿名管道 Linux的进程间可以使用匿名管道的方式进行通信,它的特点是: 匿名管道仅可在父子进程间使用 管道一般是半双工的工"/>
 
@@ -119,21 +119,14 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/">友链</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/about/">关于</a>
           
         
       </li>
@@ -247,7 +240,7 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/">友链</a>
           
 
         
@@ -258,18 +251,7 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/about/">关于</a>
           
 
         
@@ -317,15 +299,15 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2019-01-20">
-      2019-01-20
+    <time datetime="2020-01-20">
+      2020-01-20
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2019-01-28)
+      2020-01-28)
     </div>
   
 
@@ -460,7 +442,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-01-28
+      2020-01-28
       
     </span>
   </p>
@@ -478,7 +460,11 @@
 
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="https://www.dennisthink.com/tags/linux/">linux</a>
+            <a href="https://www.dennisthink.com/tags/ipc/">ipc</a>
+            
+        </div>
 
 
       
@@ -628,7 +614,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.0ad349017808f9c3192b88ad05faf786650358631fca9cd1416cbfa088cdf915.js" integrity="sha256-CtNJAXgI&#43;cMZK4itBfr3hmUDWGMfypzRQWy/oIjN&#43;RU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
 
 
 

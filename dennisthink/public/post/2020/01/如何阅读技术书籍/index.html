@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.109.0" />
+<meta name="generator" content="Hugo 0.117.0" />
 
 
 <link rel="canonical" href="https://www.dennisthink.com/post/2020/01/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E6%8A%80%E6%9C%AF%E4%B9%A6%E7%B1%8D/" />
@@ -41,7 +41,7 @@
 
 
 
-<link rel="icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.png" />
 
 
 
@@ -65,13 +65,13 @@
 <meta property="og:description" content="如何阅读Java的技术文档 在知识星球看到一个同学的提问,问如何阅读Java的API文档？作为一个C&#43;&#43;程序员,总结了两条经验,那就在Java" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.dennisthink.com/post/2020/01/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E6%8A%80%E6%9C%AF%E4%B9%A6%E7%B1%8D/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-01-20T21:38:52+08:00" />
-<meta property="article:modified_time" content="2019-01-28T21:41:52+08:00" />
+<meta property="article:published_time" content="2020-01-20T21:38:52+08:00" />
+<meta property="article:modified_time" content="2020-01-28T21:41:52+08:00" />
 <meta itemprop="name" content="如何阅读Java的技术文档">
-<meta itemprop="description" content="如何阅读Java的技术文档 在知识星球看到一个同学的提问,问如何阅读Java的API文档？作为一个C&#43;&#43;程序员,总结了两条经验,那就在Java"><meta itemprop="datePublished" content="2019-01-20T21:38:52+08:00" />
-<meta itemprop="dateModified" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="description" content="如何阅读Java的技术文档 在知识星球看到一个同学的提问,问如何阅读Java的API文档？作为一个C&#43;&#43;程序员,总结了两条经验,那就在Java"><meta itemprop="datePublished" content="2020-01-20T21:38:52+08:00" />
+<meta itemprop="dateModified" content="2020-01-28T21:41:52+08:00" />
 <meta itemprop="wordCount" content="1721">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="code-note,think," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何阅读Java的技术文档"/>
 <meta name="twitter:description" content="如何阅读Java的技术文档 在知识星球看到一个同学的提问,问如何阅读Java的API文档？作为一个C&#43;&#43;程序员,总结了两条经验,那就在Java"/>
 
@@ -119,21 +119,14 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/">友链</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/about/">关于</a>
           
         
       </li>
@@ -247,7 +240,7 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/">友链</a>
           
 
         
@@ -258,18 +251,7 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/about/">关于</a>
           
 
         
@@ -317,15 +299,15 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2019-01-20">
-      2019-01-20
+    <time datetime="2020-01-20">
+      2020-01-20
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2019-01-28)
+      2020-01-28)
     </div>
   
 
@@ -375,10 +357,10 @@
 <p>在知识星球看到一个同学的提问,问如何阅读Java的API文档？作为一个C++程序员,总结了两条经验,那就在Java文档的阅读中小试牛刀吧。</p>
 <h2 id="1-看地图---mfc之类图继承">1. 看地图&mdash;MFC之类图继承</h2>
 <p>记得最开始学习MFC的时候,经常用到的一个文档包是MSDN2001。安装完成以后,会有MFC的一个类继承图,大约是这样的:
-<img src="https://www.dennisthink.com/image/2019/11/MFC%E7%9A%84%E7%B1%BB%E7%BB%A7%E6%89%BF%E5%9B%BE.gif" alt="MFC">
+<img src="https://www.dennisthink.com/image/2020/11/MFC%E7%9A%84%E7%B1%BB%E7%BB%A7%E6%89%BF%E5%9B%BE.gif" alt="MFC">
 通过这个继承图,你可以看到各个类之间的继承关系。如果我需要抛出异常,那么就可以看看CException以及它的继承类;如果我需要一个字体的对话框,那么就可以看看CFontDialog;如果需要在界面画图,那么就可以看看CDC和CGdiObject的部分。</p>
 <p>在阅读Leveldb代码的时候,我使用Doxygen工具,生成了文档。可以非常方便的进行索引的查找。还生成了类似的结构类图,如图所示:
-<img src="https://www.dennisthink.com/image/2019/11/LevelDb%E7%9A%84Env%E7%BB%A7%E6%89%BF%E7%B1%BB%E5%9B%BE.jpg" alt="leveldb"></p>
+<img src="https://www.dennisthink.com/image/2020/11/LevelDb%E7%9A%84Env%E7%BB%A7%E6%89%BF%E7%B1%BB%E5%9B%BE.jpg" alt="leveldb"></p>
 <p>通过类图可以分析出结构关系,那么需要确定SpecialEnv的基础功能的时候，可以先去看Env类的接口,会更好的提高效率。</p>
 <h2 id="2-建索引---小学语文之默写目录">2. 建索引&mdash;小学语文之默写目录</h2>
 <p>小学五年级的的时候,语文老师是我的一个叔叔,一个络腮胡子的不带眼镜的中年人。记得他跟其他语文老师的一个区别是要求我们背诵和默写语文课本的目录部分,当时的我感觉是一脸的懵,不能够明白他让我们这么做的原因。后来写两篇读书笔记的时候,用到了两本小说的回目,终于明白了他的用途。</p>
@@ -391,13 +373,13 @@
 <p><a href="http://tool.oschina.net/apidocs/apidoc?api=jdk-zh">JAVA文档之在线版</a></p>
 <p>上面是我找到的一个在线版本的Java的API文档。在页面的主体中,就是主要类的目录了。对页面进行大概的浏览,就可以知道它包括java.awt.* 这些应该是跟GUI有关的;java.math主要是用于数学计算的一些函数;java.net.*是进行网络操作的一些类;java.lang.reflect应该是进行反射的一些类……</p>
 <p>我们具体的点开一个,比如java.net。
-<img src="https://www.dennisthink.com/image/2019/11/Java.net%E6%8A%A5%E9%81%93%E5%85%B7%E4%BD%93%E6%83%85%E5%86%B5.jpg" alt="Java.net.Image">
+<img src="https://www.dennisthink.com/image/2020/11/Java.net%E6%8A%A5%E9%81%93%E5%85%B7%E4%BD%93%E6%83%85%E5%86%B5.jpg" alt="Java.net.Image">
 就可以看到这部分中的<code>SocketOptions</code>的就是用来设置Socket的一些选项的。</p>
 <h3 id="32-看继承">3.2 看继承</h3>
 <p>比如我们用到的<code>System.out.println(&quot;Hello World!&quot;);</code>这是我们最开始学习Java的时候经常用到的一条语句,用来输出HelloWorld。如果此时我要进行输入,我该怎么办呢？</p>
 <p>仔细分析一下:
 <code>println</code>是一个方法,而<code>System.out</code>是<code>java.io.PrintStream</code>的一个实例。我们去看<code>PrintStream</code>的继承关系,
-<img src="https://www.dennisthink.com/image/2019/11/PrintStream%E7%9A%84%E7%BB%A7%E6%89%BF%E7%B1%BB%E5%9B%BE.jpg" alt="PrintStream继承关系">
+<img src="https://www.dennisthink.com/image/2020/11/PrintStream%E7%9A%84%E7%BB%A7%E6%89%BF%E7%B1%BB%E5%9B%BE.jpg" alt="PrintStream继承关系">
 可以看到它继承自java.io.OutputStream,那么猜想,应该有一个对应的InputStream。我们找到这个类,再看看它对应继承类,应该就可以实现输入了。我找完了对应的继承类,可以进行数据的读取,但不是从控制台读取的。后来查找资料发现是从Util.Scanner进行读取的,我表示不理解为什么java这样设计了,有知道的同学可以告诉我么？</p>
 <h2 id="4-总结">4. 总结</h2>
 <p>以上就是我对如何阅读文档的一个总结,从文学的阅读讲到了文档的阅读。如果您有什么意见或者建议,或者更好的阅读方法,欢迎分享给我。</p>
@@ -422,7 +404,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-01-28
+      2020-01-28
       
     </span>
   </p>
@@ -440,7 +422,11 @@
 
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="https://www.dennisthink.com/tags/code-note/">code-note</a>
+            <a href="https://www.dennisthink.com/tags/think/">think</a>
+            
+        </div>
 
 
       
@@ -460,8 +446,8 @@
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/2020/01/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">
-            <span class="next-text nav-default">软件架构设计</span>
+          <a class="next" href="/post/2020/01/the-advantage-of-software-development/">
+            <span class="next-text nav-default">软件开发的作用</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -590,7 +576,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.0ad349017808f9c3192b88ad05faf786650358631fca9cd1416cbfa088cdf915.js" integrity="sha256-CtNJAXgI&#43;cMZK4itBfr3hmUDWGMfypzRQWy/oIjN&#43;RU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
 
 
 

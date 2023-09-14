@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.109.0" />
+<meta name="generator" content="Hugo 0.117.0" />
 
 
 <link rel="canonical" href="https://www.dennisthink.com/post/2020/01/cmake%E5%92%8Ccpp%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91/" />
@@ -41,7 +41,7 @@
 
 
 
-<link rel="icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.png" />
 
 
 
@@ -65,13 +65,13 @@
 <meta property="og:description" content="CMake和Cpp条件编译(一)&mdash;CMake的条件编译 在软件开发过程中,我们往往需要根据实际情况进行不同的编译,比如编译一个软件" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.dennisthink.com/post/2020/01/cmake%E5%92%8Ccpp%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-01-20T21:38:52+08:00" />
-<meta property="article:modified_time" content="2019-01-28T21:41:52+08:00" />
+<meta property="article:published_time" content="2020-01-20T21:38:52+08:00" />
+<meta property="article:modified_time" content="2020-01-28T21:41:52+08:00" />
 <meta itemprop="name" content="CMake和Cpp条件编译(一)---CMake的条件编译">
-<meta itemprop="description" content="CMake和Cpp条件编译(一)&mdash;CMake的条件编译 在软件开发过程中,我们往往需要根据实际情况进行不同的编译,比如编译一个软件"><meta itemprop="datePublished" content="2019-01-20T21:38:52+08:00" />
-<meta itemprop="dateModified" content="2019-01-28T21:41:52+08:00" />
+<meta itemprop="description" content="CMake和Cpp条件编译(一)&mdash;CMake的条件编译 在软件开发过程中,我们往往需要根据实际情况进行不同的编译,比如编译一个软件"><meta itemprop="datePublished" content="2020-01-20T21:38:52+08:00" />
+<meta itemprop="dateModified" content="2020-01-28T21:41:52+08:00" />
 <meta itemprop="wordCount" content="908">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="cmake,cpp,code-note," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CMake和Cpp条件编译(一)---CMake的条件编译"/>
 <meta name="twitter:description" content="CMake和Cpp条件编译(一)&mdash;CMake的条件编译 在软件开发过程中,我们往往需要根据实际情况进行不同的编译,比如编译一个软件"/>
 
@@ -119,21 +119,14 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/">友链</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/about/">关于</a>
           
         
       </li>
@@ -247,7 +240,7 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/tags/">标签</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/">友链</a>
           
 
         
@@ -258,18 +251,7 @@
         
           
           
-            <a class="menu-item-link" href="https://www.dennisthink.com/categories/">分类</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://www.dennisthink.com/">关于</a>
+            <a class="menu-item-link" href="https://www.dennisthink.com/about/">关于</a>
           
 
         
@@ -317,15 +299,15 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2019-01-20">
-      2019-01-20
+    <time datetime="2020-01-20">
+      2020-01-20
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2019-01-28)
+      2020-01-28)
     </div>
   
 
@@ -378,73 +360,73 @@
 <ol>
 <li>CMakeLists.txt 文件</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#a6e22e">cmake_minimum_required</span>(VERSION <span style="color:#ae81ff">3.0</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">project</span>(CMakeDemo2)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(DEFINED DEBUG_LOG)
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;DEBUG_LOG is defined&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;DEBUG_LOG is not defined&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">endif</span>()
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmake" data-lang="cmake"><span style="display:flex;"><span>cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.0</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>project(<span style="color:#e6db74">CMakeDemo2</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#e6db74">DEFINED</span> <span style="color:#e6db74">DEBUG_LOG</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;DEBUG_LOG is defined&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>else()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;DEBUG_LOG is not defined&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ol start="2">
 <li><code>cmake ..</code>的输出效果</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84define%E7%A4%BA%E4%BE%8B_%E6%9C%AA%E8%AE%BE%E7%BD%AEDEBUG_LOG.jpg" alt="define_default"></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84define%E7%A4%BA%E4%BE%8B_%E6%9C%AA%E8%AE%BE%E7%BD%AEDEBUG_LOG.jpg" alt="define_default"></p>
 <ol start="3">
 <li><code>cmake .. -DDEBUG_LOG=1</code>的输出效果</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84define%E7%A4%BA%E4%BE%8B_%E8%AE%BE%E7%BD%AEDEBUG_LOG%E7%9A%84%E6%95%88%E6%9E%9C.jpg" alt="define_DEBUG_LOG=1"></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84define%E7%A4%BA%E4%BE%8B_%E8%AE%BE%E7%BD%AEDEBUG_LOG%E7%9A%84%E6%95%88%E6%9E%9C.jpg" alt="define_DEBUG_LOG=1"></p>
 <h2 id="12-cmake的if示例">1.2 CMake的if示例</h2>
 <ol>
 <li>CMakeLists.txt文件</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#a6e22e">cmake_minimum_required</span>(VERSION <span style="color:#ae81ff">3.0</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">project</span>(CMakeDemo1)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">option</span>(DEBUG_LOG <span style="color:#e6db74">&#34;Print log for debug version&#34;</span> ON)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(DEBUG_LOG)
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;DEBUG_LOG is on&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;DEBUG LOG is off&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">endif</span>(DEBUG_LOG)
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmake" data-lang="cmake"><span style="display:flex;"><span>cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.0</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>project(<span style="color:#e6db74">CMakeDemo1</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>option(<span style="color:#e6db74">DEBUG_LOG</span> <span style="color:#e6db74">&#34;Print log for debug version&#34;</span> <span style="color:#e6db74">ON</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#e6db74">DEBUG_LOG</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;DEBUG_LOG is on&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>else()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;DEBUG LOG is off&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>endif(<span style="color:#e6db74">DEBUG_LOG</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ol start="2">
 <li><code>cmake .. -DDEBUG_LOG=ON</code>的输出效果</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84if%E7%A4%BA%E4%BE%8BDEBUG_LOG_ON.jpg" alt=""></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84if%E7%A4%BA%E4%BE%8BDEBUG_LOG_ON.jpg" alt=""></p>
 <ol start="3">
 <li><code>cmake .. -DDEBUG_LOG=OFF</code>的输出效果</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84if%E7%A4%BA%E4%BE%8BDEBUG_LOG_OFF.jpg" alt=""></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84if%E7%A4%BA%E4%BE%8BDEBUG_LOG_OFF.jpg" alt=""></p>
 <h2 id="13-cmake中的数值比较">1.3 CMake中的数值比较</h2>
 <p>在CMake中,我们可以通过比较数值,来选择不同的操作,比如下面这个例子。数值比较我们使用的是<code>LESS</code>(小于)、<code>EQUAL</code>(等于)、<code>GREATER</code>(大于)</p>
 <ol>
 <li>CMakeLists.txt的示例</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#a6e22e">cmake_minimum_required</span>(VERSION <span style="color:#ae81ff">3.0</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">project</span>(CMakeDemo3)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#960050;background-color:#1e0010">$</span>{PREV_VALUE} LESS <span style="color:#960050;background-color:#1e0010">$</span>{CUR_VALUE})
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE &lt; CUR_VALUE &#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">elseif</span>(<span style="color:#960050;background-color:#1e0010">$</span>{PREV_VALUE} EQUAL <span style="color:#960050;background-color:#1e0010">$</span>{CUR_VALUE})
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE == CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">elseif</span>(<span style="color:#960050;background-color:#1e0010">$</span>{PREV_VALUE} GREATER <span style="color:#960050;background-color:#1e0010">$</span>{CUR_VALUE})
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE &gt; CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE unknown relation with CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">endif</span>()
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmake" data-lang="cmake"><span style="display:flex;"><span>cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.0</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>project(<span style="color:#e6db74">CMakeDemo3</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#f92672">${</span>PREV_VALUE<span style="color:#f92672">}</span> <span style="color:#e6db74">LESS</span> <span style="color:#f92672">${</span>CUR_VALUE<span style="color:#f92672">}</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE &lt; CUR_VALUE &#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>PREV_VALUE<span style="color:#f92672">}</span> <span style="color:#e6db74">EQUAL</span> <span style="color:#f92672">${</span>CUR_VALUE<span style="color:#f92672">}</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE == CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>PREV_VALUE<span style="color:#f92672">}</span> <span style="color:#e6db74">GREATER</span> <span style="color:#f92672">${</span>CUR_VALUE<span style="color:#f92672">}</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE &gt; CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>else()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE unknown relation with CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ol start="2">
 <li><code>cmake ..</code>的输出</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83%E4%B9%8B%E9%BB%98%E8%AE%A4%E7%BC%96%E8%AF%91.jpg" alt="默认输出"></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83%E4%B9%8B%E9%BB%98%E8%AE%A4%E7%BC%96%E8%AF%91.jpg" alt="默认输出"></p>
 <ol start="3">
 <li><code>cmake .. -DPREV_VALUE=1 -DCUR_VALUE=2</code>的输出(LESS)</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83_PREV_LESS_CUR.jpg" alt="LESS输出"></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83_PREV_LESS_CUR.jpg" alt="LESS输出"></p>
 <ol start="4">
 <li>
 <p><code>cmake .. -DPREV_VALUE=2 -DCUR_VALUE=2</code>的输出(EQUAL)
-<img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83%E4%B9%8B_EQUAL.jpg" alt=""></p>
+<img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83%E4%B9%8B_EQUAL.jpg" alt=""></p>
 </li>
 <li>
 <p><code>cmake .. -DPREV_VALUE=2 -DCUR_VALUE=1</code>的输出(GREATER)
-<img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83%E4%B9%8B_GREATER.jpg" alt=""></p>
+<img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84%E6%95%B0%E5%80%BC%E6%AF%94%E8%BE%83%E4%B9%8B_GREATER.jpg" alt=""></p>
 </li>
 </ol>
 <h2 id="14-cmake中的字符串比较">1.4 CMake中的字符串比较</h2>
@@ -452,32 +434,32 @@
 <ol>
 <li>CMakeLists.txt的示例</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#a6e22e">cmake_minimum_required</span>(VERSION <span style="color:#ae81ff">3.0</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">project</span>(CMakeDemo4)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#960050;background-color:#1e0010">$</span>{PREV_VALUE} STRLESS <span style="color:#960050;background-color:#1e0010">$</span>{CUR_VALUE})
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE strless CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">elseif</span>(<span style="color:#960050;background-color:#1e0010">$</span>{PREV_VALUE} STREQUAL <span style="color:#960050;background-color:#1e0010">$</span>{CUR_VALUE})
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE strequal CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">elseif</span>(<span style="color:#960050;background-color:#1e0010">$</span>{PREV_VALUE} STRGREATER <span style="color:#960050;background-color:#1e0010">$</span>{CUR_VALUE})
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE strgreater CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">message</span>(<span style="color:#e6db74">&#34;PREV_VALUE unknown CUR_VALUE&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">endif</span>()
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmake" data-lang="cmake"><span style="display:flex;"><span>cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.0</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>project(<span style="color:#e6db74">CMakeDemo4</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#f92672">${</span>PREV_VALUE<span style="color:#f92672">}</span> <span style="color:#e6db74">STRLESS</span> <span style="color:#f92672">${</span>CUR_VALUE<span style="color:#f92672">}</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE strless CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>PREV_VALUE<span style="color:#f92672">}</span> <span style="color:#e6db74">STREQUAL</span> <span style="color:#f92672">${</span>CUR_VALUE<span style="color:#f92672">}</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE strequal CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>PREV_VALUE<span style="color:#f92672">}</span> <span style="color:#e6db74">STRGREATER</span> <span style="color:#f92672">${</span>CUR_VALUE<span style="color:#f92672">}</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE strgreater CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>else()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">&#34;PREV_VALUE unknown CUR_VALUE&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ol start="2">
 <li><code>cmake ..</code>的默认编译</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8B%E9%BB%98%E8%AE%A4%E6%83%85%E5%86%B5.jpg" alt="String_default"></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8B%E9%BB%98%E8%AE%A4%E6%83%85%E5%86%B5.jpg" alt="String_default"></p>
 <ol start="3">
 <li><code>cmake .. -DPREV_VALUE=A -DCUR_VALUE=B</code>的输出(STRLESS)</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8BSTRLESS.jpg" alt="String_STRLESSS"></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8BSTRLESS.jpg" alt="String_STRLESSS"></p>
 <ol start="4">
 <li><code>cmake .. -DPREV_VALUE=B -DCUR_VALUE=B</code>的输出结果(STREQUAL)</li>
 </ol>
-<p><img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8BSTREQUAL.jpg" alt=""></p>
+<p><img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8BSTREQUAL.jpg" alt=""></p>
 <ol start="5">
 <li><code>cmake .. -DPREV_VALUE=B -DCUR_VALUE=A</code>的输出结果(STRGREATER)
-<img src="https://www.dennisthink.com/wp-content/uploads/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8BSTRGREATER.jpg" alt=""></li>
+<img src="https://www.dennisthink.com/image/2020/10/CMake%E7%9A%84String%E6%AF%94%E8%BE%83%E4%B9%8BSTRGREATER.jpg" alt=""></li>
 </ol>
 <p>以上就是对CMake的条件编译的简单介绍,如果有什么遗漏或者错误的地方,欢迎大家指出。</p>
 
@@ -493,7 +475,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-01-28
+      2020-01-28
       
     </span>
   </p>
@@ -511,7 +493,12 @@
 
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="https://www.dennisthink.com/tags/cmake/">cmake</a>
+            <a href="https://www.dennisthink.com/tags/cpp/">cpp</a>
+            <a href="https://www.dennisthink.com/tags/code-note/">code-note</a>
+            
+        </div>
 
 
       
@@ -661,7 +648,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.0ad349017808f9c3192b88ad05faf786650358631fca9cd1416cbfa088cdf915.js" integrity="sha256-CtNJAXgI&#43;cMZK4itBfr3hmUDWGMfypzRQWy/oIjN&#43;RU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
 
 
 

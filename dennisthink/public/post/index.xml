@@ -6,185 +6,185 @@
     <description>Recent content in Posts on 浮生笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Jan 2022 21:38:52 +0800</lastBuildDate><atom:link href="https://www.dennisthink.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Aug 2023 21:41:52 +0800</lastBuildDate><atom:link href="https://www.dennisthink.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>关于</title>
-      <link>https://www.dennisthink.com/about/</link>
+      <title>友情链接</title>
+      <link>https://www.dennisthink.com/friendlink/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/about/</guid>
-      <description>大家好，很高兴你来我的博客，以下是我的一点介绍。 我叫米彦辉，目前在北京从事软件开发的工作，主要的编程语言是C++(在学习C++11),会一点</description>
+      <guid>https://www.dennisthink.com/friendlink/</guid>
+      <description>china-personal-it-blog 中国it从业者的个人博客 收录标准: 原创文章占比超过90% HTTPS优先 列表 左耳朵耗子 余晟 丁宇 徐宥 申旻 小辉 冯冬 Phodal Huang 70后中年大叔 善用佳软 云风</description>
     </item>
     
     <item>
-      <title> 2022 第一篇日志 </title>
-      <link>https://www.dennisthink.com/post/2022/2022/</link>
-      <pubDate>Sat, 01 Jan 2022 21:38:52 +0800</pubDate>
+      <title>用户界面与跨平台</title>
+      <link>https://www.dennisthink.com/post/2023/user-interface-and-cross-platform/</link>
+      <pubDate>Wed, 23 Aug 2023 21:41:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2022/2022/</guid>
-      <description>2022年的第一篇日志。</description>
+      <guid>https://www.dennisthink.com/post/2023/user-interface-and-cross-platform/</guid>
+      <description>因为个人的原因，我把工作环境切换到了Ubuntu下，发现没有一个好用的邮件客户端，后来安装了Windows虚拟机，用Foxmail也不太方便</description>
     </item>
     
     <item>
-      <title> 2021 第一篇日志 </title>
-      <link>https://www.dennisthink.com/post/2021/2021/</link>
-      <pubDate>Fri, 01 Jan 2021 21:38:52 +0800</pubDate>
+      <title>使用telnet通过IMAP协议读取QQ邮箱</title>
+      <link>https://www.dennisthink.com/post/2023/use_telnet_get_email_of_qq_by_imap_protocal/</link>
+      <pubDate>Sat, 13 May 2023 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2021/2021/</guid>
-      <description>2021年的第一篇日志。</description>
+      <guid>https://www.dennisthink.com/post/2023/use_telnet_get_email_of_qq_by_imap_protocal/</guid>
+      <description>使用telnet通过IMAP协议读取QQ邮箱 1. 连接到QQ邮箱的IMAP服务器 在命令行窗口执行: telnet imap.qq.com 143 Server: * OK [CAPABILITY IMAP4 IMAP4rev1 ID AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2 NAMESPACE] QQMail XMIMAP4Server ready 看到上面这条</description>
     </item>
     
     <item>
-      <title> 2020 第一篇日志 </title>
-      <link>https://www.dennisthink.com/post/2020/2020/</link>
-      <pubDate>Wed, 01 Jan 2020 21:38:52 +0800</pubDate>
+      <title>信息成本-----从ChatGPT到情报学</title>
+      <link>https://www.dennisthink.com/post/2023/information-cost-from-chatgpt-to-information-science/</link>
+      <pubDate>Mon, 10 Apr 2023 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/2020/</guid>
-      <description>2020年的第一篇日志。</description>
+      <guid>https://www.dennisthink.com/post/2023/information-cost-from-chatgpt-to-information-science/</guid>
+      <description>随着ChatGPT更新到了4.0版本，百度的文心一言也推出了，阿里也推出了通义千问，人工智能再一次火了。计算机技术的发展，计算能力的提升了带</description>
     </item>
     
     <item>
-      <title>《阿飞正传》观后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E9%98%BF%E9%A3%9E%E6%AD%A3%E4%BC%A0%E8%A7%82%E5%90%8E%E6%84%9F/</link>
+      <title>买断制到订阅制----兼谈消费频次</title>
+      <link>https://www.dennisthink.com/post/2023/buyout-vs-rent/</link>
+      <pubDate>Wed, 11 Jan 2023 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2023/buyout-vs-rent/</guid>
+      <description>最早引起这个话题的是，在知乎上看到notability从买断制变为订阅制而引起的一系列风波。之前由看到EdrawMax被万兴收购,到去理发，</description>
+    </item>
+    
+    <item>
+      <title>我眼中的CSDN</title>
+      <link>https://www.dennisthink.com/post/2023/%E6%88%91%E7%9C%BC%E4%B8%AD%E7%9A%84csdn/</link>
+      <pubDate>Wed, 11 Jan 2023 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2023/%E6%88%91%E7%9C%BC%E4%B8%AD%E7%9A%84csdn/</guid>
+      <description>得知邹欣老师加盟了CSDN，我心里吃了一惊。在确定事实无误以后，决定写篇文章来聊聊我的感想。 1. 我认识的CSDN 我是在2011年左右注册CSD</description>
+    </item>
+    
+    <item>
+      <title>迁移博客内容到静态博客</title>
+      <link>https://www.dennisthink.com/post/2023/transform-blog-to-static-blog/</link>
+      <pubDate>Tue, 10 Jan 2023 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2023/transform-blog-to-static-blog/</guid>
+      <description>迁移博客内容到静态博客 2023年的第一件事就是将博客从wordpress迁移到了hugo,也就是从动态博客迁移到了静态博客。还有就是把之前在</description>
+    </item>
+    
+    <item>
+      <title>Hugo使用Jane主题支持搜索实现</title>
+      <link>https://www.dennisthink.com/post/2023/use-hugo-to-generate-blog-and-jane-as-theme/</link>
+      <pubDate>Mon, 02 Jan 2023 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2023/use-hugo-to-generate-blog-and-jane-as-theme/</guid>
+      <description>操作系统：Windows7 64Bit Ultimate版本。 1. 安装Hugo 从hugo官网下载Hugo并安装。 Hugo官网 2. 添加Hugo.exe 到PAT</description>
+    </item>
+    
+    <item>
+      <title>C语言和Lua的相互调用示例代码</title>
+      <link>https://www.dennisthink.com/post/2022/08/c-lua-call-each-other-code/</link>
+      <pubDate>Wed, 17 Aug 2022 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2022/08/c-lua-call-each-other-code/</guid>
+      <description>C语言和Lua的相互调用示例代码 本代码参考博客: https://lucasklassmann.com/blog/2019-02-02-how-to-embeddeding-lua-in-c/ /** * @file luaLearn.c * @author DennisThink (dennismi1024@gmail.com) (https://www.dennisthink.com/) * @brief C and Lua call Learn Demo * @version 0.1 * @date 2022-08-19 * * @copyright Copyright (c) 2022 * */ //参考文档 //https://lucasklassmann.com/blog/2019-02-02-how-to-embeddeding-lua-in-c/ #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;lua.h&amp;gt; #include &amp;lt;lualib.h&amp;gt; #include</description>
+    </item>
+    
+    <item>
+      <title>不同产业的分析</title>
+      <link>https://www.dennisthink.com/post/2022/01/analysis-on-different-industry/</link>
+      <pubDate>Mon, 17 Jan 2022 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2022/01/analysis-on-different-industry/</guid>
+      <description>我对第一、第二、第三产业的理解 我们一般习惯把产业分为第一产业、第二产业、第三产业，第一产业主要包括农业、畜牧业、渔业、矿产等，第二产业主要包</description>
+    </item>
+    
+    <item>
+      <title>从放逐之城看经济学</title>
+      <link>https://www.dennisthink.com/post/2022/01/thinking-of-economic-about-game-banished/</link>
+      <pubDate>Mon, 17 Jan 2022 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2022/01/thinking-of-economic-about-game-banished/</guid>
+      <description>从放逐之城看经济学 最近一周玩了一个叫做《放逐之城》的游戏，颇有计划经济的感觉，而且模型相对简单，下文就把我的理解写下来，算是一个记录吧。 1. 主</description>
+    </item>
+    
+    <item>
+      <title>回首2021,展望2022</title>
+      <link>https://www.dennisthink.com/post/2022/01/review-2021-forward-2022/</link>
+      <pubDate>Sun, 02 Jan 2022 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2022/01/review-2021-forward-2022/</guid>
+      <description>回首2021,展望2022 2021年刚刚过去，2022年如期到来，在这辞旧迎新的日子里，又到了一年一度的总结时间了。虽然不是很有想写的冲动，</description>
+    </item>
+    
+    <item>
+      <title>游戏中的经济学</title>
+      <link>https://www.dennisthink.com/post/2021/the-economic-in-games/</link>
+      <pubDate>Sat, 02 Jan 2021 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2021/the-economic-in-games/</guid>
+      <description>游戏中的经济学 总结我玩过的游戏,我将游戏主要分为3种类型。 1. 单一无限资源 在dota中,所有的物品购买都需要金币,而金币的产生有两种主要的方式</description>
+    </item>
+    
+    <item>
+      <title>Windows获取网络地址、子网掩码等</title>
+      <link>https://www.dennisthink.com/post/2018/get-net-addr-and-subnet-mask-on-windows/</link>
+      <pubDate>Fri, 07 Feb 2020 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.dennisthink.com/post/2018/get-net-addr-and-subnet-mask-on-windows/</guid>
+      <description>#include &amp;lt;winsock2.h&amp;gt; #include &amp;lt;iphlpapi.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #pragma comment(lib, &amp;#34;IPHLPAPI.lib&amp;#34;) #define MALLOC(x) HeapAlloc(GetProcessHeap(), 0, (x)) #define FREE(x) HeapFree(GetProcessHeap(), 0, (x)) /* Note: could also use malloc() and free() */ int __cdecl main() { /* Declare and initialize variables */ // It is possible for an adapter to have multiple // IPv4 addresses, gateways, and secondary WINS servers // assigned to the adapter. // // Note that this sample code</description>
+    </item>
+    
+    <item>
+      <title>-fsanitize=address 参数作用</title>
+      <link>https://www.dennisthink.com/post/2019/01/the-use-of-fsanitize-address-option/</link>
       <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/01/%E9%98%BF%E9%A3%9E%E6%AD%A3%E4%BC%A0%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
-      <description>《阿飞正传》观后感 “世界上有一种鸟是没有脚的，它只可以这样飞啊飞，飞得累了便在风里睡觉，这种鸟儿一辈子只可以落地一次，那一次就是它死的时候。</description>
+      <guid>https://www.dennisthink.com/post/2019/01/the-use-of-fsanitize-address-option/</guid>
+      <description>在C++的开发中，我们经常会遇到很多和内存有关的错误。其实使用编译器的一些检查功能，可以帮助我们一定程度上减少这样的错误,下面我们介绍一下 -fsanitize=address</description>
     </item>
     
     <item>
-      <title>《北京折叠》读后感---生活在第三空间的我</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%8C%97%E4%BA%AC%E6%8A%98%E5%8F%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
+      <title>C&#43;&#43; 编译器支持标准判断</title>
+      <link>https://www.dennisthink.com/post/2014/%E7%9F%A9%E5%BD%A2%E9%87%8D%E5%8F%A0%E6%A3%80%E6%B5%8B/</link>
       <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%8C%97%E4%BA%AC%E6%8A%98%E5%8F%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>《北京折叠》读后感&amp;mdash;生活在第三空间的我 很早就听说过这部小说，只是一直没有抽出时间来读。空白读书会的孙文同学恰好推荐了，成为了本周</description>
+      <guid>https://www.dennisthink.com/post/2014/%E7%9F%A9%E5%BD%A2%E9%87%8D%E5%8F%A0%E6%A3%80%E6%B5%8B/</guid>
+      <description>// 矩形重叠类型注释 // CORNER_OVERLAP // -------------------- // | | // | | // | **********|********** // | * | * // | * | * // ---------*---------| * // * * // * * // ********************* // // ANCHOR_OVERLAP // ---- // | | // | | // *******|**|******* // * | | * // * | | * // * ---- *</description>
     </item>
     
     <item>
-      <title>《北京折叠》读书会讨论组1总结</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%8C%97%E4%BA%AC%E6%8A%98%E5%8F%A0%E8%AE%A8%E8%AE%BA_last/</link>
+      <title>C&#43;&#43; 编译器支持标准判断</title>
+      <link>https://www.dennisthink.com/post/2019/01/cpp-compiler-support-standard-verify/</link>
       <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%8C%97%E4%BA%AC%E6%8A%98%E5%8F%A0%E8%AE%A8%E8%AE%BA_last/</guid>
-      <description>《北京折叠》读书会讨论组1总结 2019年8月3日，在10号线国贸站附近的太平洋咖啡馆，空白读书会举办了《北京折叠》读书讨论会。讨论会分为两个</description>
+      <guid>https://www.dennisthink.com/post/2019/01/cpp-compiler-support-standard-verify/</guid>
+      <description>C++ 主要的历史版本有 C++98(1.0) C++03(TR1) C++11 C++14 C++17 C++20. 在GCC++和clang++编译器下，可以使用下面的代码进行判断。 1 2 3 4 5 6 7 8 9 10 #include &amp;lt;iostream&amp;gt; int main(int argc,char * argv[]) { #ifdef __cplusplus std::cout &amp;lt;&amp;lt;</description>
     </item>
     
     <item>
-      <title>《北京折叠》小组讨论</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%8C%97%E4%BA%AC%E6%8A%98%E5%8F%A0%E8%AE%A8%E8%AE%BA/</link>
+      <title>C&#43;&#43; 关键词(二)之逻辑判断和位运算</title>
+      <link>https://www.dennisthink.com/post/2019/01/c&#43;&#43;%E5%85%B3%E9%94%AE%E8%AF%8D3%E4%B9%8B%E9%80%BB%E8%BE%91%E5%88%A4%E6%96%AD%E5%92%8C%E4%BD%8D%E8%BF%90%E7%AE%97/</link>
       <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%8C%97%E4%BA%AC%E6%8A%98%E5%8F%A0%E8%AE%A8%E8%AE%BA/</guid>
-      <description>《北京折叠》小组讨论 (孙文) 出身决定未来，阶级的力量。 纪录片《人生七年》 《银河补习班》。 阶级固化难打破(教育 ，老刀挣钱就是为了糖糖的教育。)</description>
+      <guid>https://www.dennisthink.com/post/2019/01/c&#43;&#43;%E5%85%B3%E9%94%AE%E8%AF%8D3%E4%B9%8B%E9%80%BB%E8%BE%91%E5%88%A4%E6%96%AD%E5%92%8C%E4%BD%8D%E8%BF%90%E7%AE%97/</guid>
+      <description>逻辑判断 关键词 含义 等价逻辑 举例 not 逻辑非 ! not true == false not_eq 不等于,等价于 != 5 not_eq 4 == true and 逻辑与 &amp;amp;&amp;amp; bAdded &amp;amp;&amp;amp; bSetted or 逻辑或 | 位操作和赋值 关键词 含义 等价逻辑 举例 xor 异</description>
     </item>
     
     <item>
-      <title>《动物世界》观后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%8A%A8%E7%89%A9%E4%B8%96%E7%95%8C%E8%A7%82%E5%90%8E%E6%84%9F/</link>
+      <title>VS Code的golang开发配置 之 代码提示</title>
+      <link>https://www.dennisthink.com/post/2018/code-intellisense-of-go-use-vscode/</link>
       <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%8A%A8%E7%89%A9%E4%B8%96%E7%95%8C%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
-      <description>《动物世界》观后感 虽然李易峰的演技在之前的电影中一直被批评，但是看了他在电影《动物世界》中的表现，还是不错的。那么就说说我对这部电影的体会吧</description>
+      <guid>https://www.dennisthink.com/post/2018/code-intellisense-of-go-use-vscode/</guid>
+      <description>之前用VS Code的时候，发现自己的代码的提示一直不好，换用JetBrain的Goland的代码提示是好了，但是比较占用资源。在网上找了一些</description>
     </item>
     
     <item>
-      <title>《二刻拍案惊奇》读后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E4%BA%8C%E5%88%BB%E6%8B%8D%E6%A1%88%E6%83%8A%E5%A5%87%E6%83%8A%E5%A5%87%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
+      <title>二叉树遍历的非递归算法的实现</title>
+      <link>https://www.dennisthink.com/post/2013/no-recursion-method-traverse-binary-tree/</link>
       <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
       
-      <guid>https://www.dennisthink.com/post/2020/01/%E4%BA%8C%E5%88%BB%E6%8B%8D%E6%A1%88%E6%83%8A%E5%A5%87%E6%83%8A%E5%A5%87%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>《二刻拍案惊奇》读后感 本来应该从《初刻拍案惊奇》写起的，只是那本书看过好久了，内容什么的，忘记了很多。刚好最近刚刚看完《二刻拍案惊奇》，那么</description>
-    </item>
-    
-    <item>
-      <title>《芙蓉镇》观后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E8%8A%99%E8%93%89%E9%95%87%E8%A7%82%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E8%8A%99%E8%93%89%E9%95%87%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
-      <description>《芙蓉镇》观后感 《芙蓉镇》这部电影听说过好久了,不过一直没有时间看。B站的放映厅恰好上了这部电影,作为影迷的我自然不能够错过,毕竟大会员不便</description>
-    </item>
-    
-    <item>
-      <title>《浮生六记》读后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0%E4%B9%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0%E4%B9%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>《浮生六记》读后感 空白读书会的群主请大家推荐书籍,我就推荐了清代文人沈复的《浮生六记》。因为最近比较忙,所以这篇读后感是仅仅看完了第一记&amp;q</description>
-    </item>
-    
-    <item>
-      <title>《浮生六记》读后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E6%97%A5%E6%8A%A5/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E6%97%A5%E6%8A%A5/</guid>
-      <description>分析esad占用CPU使用率100%的原因，并和秦欢沟通重现的步骤,该bug没有重现,待重现后解决。 微隔离重复上报的问题,已经和郭夏炎、汤凌</description>
-    </item>
-    
-    <item>
-      <title>《红楼梦》之我最喜欢的一个姑娘</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E7%BA%A2%E6%A5%BC%E6%A2%A6_%E4%BA%A4%E6%B5%81%E5%88%86%E4%BA%AB/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E7%BA%A2%E6%A5%BC%E6%A2%A6_%E4%BA%A4%E6%B5%81%E5%88%86%E4%BA%AB/</guid>
-      <description>《红楼梦》之我最喜欢的一个姑娘 黄叶村 2016年01月26日 摄于北京植物园 1. 缘起 空白读书会选定了这周的讨论书籍是《红楼梦》,周群主明镜同学列出</description>
-    </item>
-    
-    <item>
-      <title>《恍惚人间》读后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E6%81%8D%E6%83%9A%E4%BA%BA%E9%97%B4%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E6%81%8D%E6%83%9A%E4%BA%BA%E9%97%B4%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>《恍惚人间》读后感 记得是在逛豆瓣的时候,看到了一个豆友叫小考拉在写公众号,就关注了。后来知道她出了自己的作品集,叫《恍惚人间》,作为朋友买了</description>
-    </item>
-    
-    <item>
-      <title>《金瓶梅》----世事洞明,人情练达</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E9%87%91%E7%93%B6%E6%A2%85%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E9%87%91%E7%93%B6%E6%A2%85%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>《金瓶梅》&amp;mdash;-世事洞明,人情练达 1. 概述 《金瓶梅》，中国古代长篇白话世情小说，一般认为是中国第一部文人独立创作的章回体长篇小说。其</description>
-    </item>
-    
-    <item>
-      <title>《哪吒之魔童降世》观后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%93%AA%E5%90%92%E7%94%B5%E5%BD%B1%E8%A7%82%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%93%AA%E5%90%92%E7%94%B5%E5%BD%B1%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
-      <description>《哪吒之魔童降世》观后感 前段时间,网络上《哪吒之魔童降世》的呼声很高,不过那个时候我没有去看。这周在家里把这部电影看完了,就说说我看这部电影</description>
-    </item>
-    
-    <item>
-      <title>《如父如子》观后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%A6%82%E7%88%B6%E5%A6%82%E5%AD%90%E8%A7%82%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%A6%82%E7%88%B6%E5%A6%82%E5%AD%90%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
-      <description>《如父如子》观后感 记得在知乎上看过一个问题&amp;mdash;- “如果一个男人发现养了好多年的孩子，不是自己的，会是怎么样的感想？”。导演 是枝裕和</description>
-    </item>
-    
-    <item>
-      <title>《儒林外史》读后感</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2_%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2_%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>《儒林外史》读后感 昨天晚上差不多把《儒林外史》看完了，一共五十六回，虽然比《红楼梦》短很多，但是因为叙事结构的原因，人物的关系还是没搞清楚，</description>
-    </item>
-    
-    <item>
-      <title>《软件创富---共享英雄创业之道》读后感.md</title>
-      <link>https://www.dennisthink.com/post/2020/01/%E8%BD%AF%E4%BB%B6%E5%88%9B%E5%AF%8C---%E5%85%B1%E4%BA%AB%E8%8B%B1%E9%9B%84%E5%88%9B%E4%B8%9A%E4%B9%8B%E9%81%93%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 20 Jan 2019 21:38:52 +0800</pubDate>
-      
-      <guid>https://www.dennisthink.com/post/2020/01/%E8%BD%AF%E4%BB%B6%E5%88%9B%E5%AF%8C---%E5%85%B1%E4%BA%AB%E8%8B%B1%E9%9B%84%E5%88%9B%E4%B8%9A%E4%B9%8B%E9%81%93%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>春节的时候因为不能出门,在家看完了《软件创富》这本书。这本书围绕共享软件展开,对软件历史感兴趣的朋友,非常推荐你去看这本书。下面是我的一些体</description>
+      <guid>https://www.dennisthink.com/post/2013/no-recursion-method-traverse-binary-tree/</guid>
+      <description>二叉树是数据结构中经常用到的一种，而平衡二叉树是实现快速查找的一种数据结构，本文分析了二叉树的递归遍历算法，在此基础上是实现了二叉树的非递归</description>
     </item>
     
   </channel>
