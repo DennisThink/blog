@@ -17,7 +17,7 @@ java的```public class```  的名称要和文件的名称保持一致。
 
 >  MainFirst.java
 
-```java 
+```java  {linenos=table}
 public class MainFirst
 {
     public static void main(String[] args){
@@ -33,7 +33,8 @@ public class MainFirst
 
 >  MainSecond.java
 
-```java package Two;
+```java {linenos=table}
+package Two;
 public class MainTwo{
     public static void main(String[] args){
         System.out.println("MainTwo");
@@ -52,7 +53,8 @@ public class MainTwo{
 >  Add.java
 
 
-```java package Three;
+```java {linenos=table}
+package Three;
 public class Add
 {
     public int AddValue(int x,int y){
@@ -64,7 +66,8 @@ public class Add
 
 >  MainThree.java
 
-```java package Three;
+```java {linenos=table}
+package Three;
 public class MainThree{
     public static void main(String[]args){
         System.out.println("MainThree");
@@ -90,7 +93,8 @@ public class MainThree{
 
 >  TestAdd.java
 
-```java package Test;
+```java {linenos=table}
+package Test;
 public class TestAdd{
     public void PrintName(){
         System.out.println("TestAdd");
@@ -102,7 +106,7 @@ public class TestAdd{
 >  TestMain.java
 
 
-```java
+```java {linenos=table}
 package Test;
 public class TestMain{
     public static void main(String[] args){

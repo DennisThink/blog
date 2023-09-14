@@ -3,6 +3,7 @@ title: "Linux 获取网卡信息"
 date: 2015-11-25T21:38:52+08:00
 lastmod: 2015-11-25T21:41:52+08:00
 weight: 50
+slug: get_net_card_on_linux_system_by_cpp
 # you can close something for this content if you open it in config.toml.
 tags: ["from-cnblogs"]
 comment: true

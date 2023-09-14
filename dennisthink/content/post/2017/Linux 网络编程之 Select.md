@@ -2,6 +2,7 @@
 title: "Linux 网络编程之 Select"
 date: 2017-11-20T21:38:52+08:00
 lastmod: 2017-11-20T21:41:52+08:00
+slug: linux_net_program_use_select
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["from-csdn"]

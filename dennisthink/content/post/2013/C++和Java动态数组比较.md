@@ -5,6 +5,7 @@ lastmod: 2013-04-07T21:41:52+08:00
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["from-csdn"]
+slug:  varing-arrays-between-cpp-and-java
 comment: true
 mathjax: false
 ---

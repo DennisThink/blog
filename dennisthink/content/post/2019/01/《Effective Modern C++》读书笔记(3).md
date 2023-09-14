@@ -3,7 +3,7 @@ title: "Effective Morden C++ 读书笔记(3)"
 date: 2017-08-20T21:38:52+08:00
 lastmod: 2022-08-28T21:41:52+08:00
 weight: 50
-url: /blog/note/effective-modern-cpp-learn-three/
+slug: note-effective-modern-cpp-learn-three
 # you can close something for this content if you open it in config.toml.
 comment: false
 mathjax: false

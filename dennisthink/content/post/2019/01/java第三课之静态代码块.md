@@ -16,7 +16,7 @@ java的静态块在整个运行过程中只执行一次，所有的情况如下�
 ## 1.基础代码
 Parent.java
 
-```java
+```java {linenos=table}
 package staticLearn;
 public class Parent{
     public static String Name="Parent";
@@ -58,7 +58,7 @@ public class Parent{
 
 Child.java
 
-```java 
+```java {linenos=table}
 package staticLearn;
 public class Child extends Parent{
     public static String childName = "Child Name";
@@ -101,7 +101,7 @@ public class Child extends Parent{
 
 One.java
 
-```java 
+```java {linenos=table}
 import staticLearn.*;
 public class One {
     public static void main(String[] args) {
@@ -135,7 +135,7 @@ public class One {
 
 Two.java
 
-```java 
+```java {linenos=table}
 import staticLearn.*;
 public class Two{
     public static void main(String[] args){
@@ -159,7 +159,7 @@ public class Two{
 
 Three.java
 
-```java 
+```java {linenos=table}
 import staticLearn.*;
 public class Three{
     public static void main(String[] args){
@@ -180,7 +180,7 @@ public class Three{
 
 Four.java
 
-```java 
+```java {linenos=table}
 import staticLearn.*;
 public class Four{
     public static void main(String[] args){
@@ -208,7 +208,7 @@ public class Four{
 示例1
 Five.java
 
-```java 
+```java {linenos=table}
 import staticLearn.*;
 public class Five{
     public static void main(String[]args){
@@ -231,7 +231,7 @@ java Five
 示例2
 Six.java
 
-```java 
+```java {linenos=table}
 import staticLearn.*;
 public class Six{
     public static void main(String[] args){
@@ -259,7 +259,8 @@ java Six
 反射子类
 Seven.java
 
-``` java public class Seven{
+```java {linenos=table}
+public class Seven{
     public static void main(String[] args){
         try{
             Class.forName("staticLearn.Child");

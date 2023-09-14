@@ -3,6 +3,7 @@ title: "hides overloaded virtual function 警告"
 date: 2019-01-20T21:38:52+08:00
 lastmod: 2019-01-28T21:41:52+08:00
 # you can close something for this content if you open it in config.toml.
+slug: hide-overload-virtual-function-warning
 comment: true
 mathjax: false
 ---
@@ -15,7 +16,7 @@ mathjax: false
 
 这条警告复现的一个简单的示例如下:
 
-```cpp
+```cpp {linenos=table}
 #include  <iostream>
 
 class Base
@@ -62,7 +63,7 @@ int main(int argc,char* argv[])
 这个警告的意思主要是防止不小心用重载覆盖了重写。本意是想重写，结果重载了。
 比如下面这样的情况:
 
-```cpp 
+```cpp {linenos=table}
 struct chart; // let's pretend this exists
 struct Base
 {

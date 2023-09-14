@@ -2,7 +2,7 @@
 title: "golang编程之我见"
 date: 2017-11-23T21:38:52+08:00
 lastmod: 2017-11-23T21:41:52+08:00
-url: my_option_about_go_program_language
+slug: my_option_about_go_program_language
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["from-csdn"]

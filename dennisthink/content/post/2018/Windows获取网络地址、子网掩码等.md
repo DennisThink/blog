@@ -7,6 +7,7 @@ weight: 50
 tags: ["from-cnblog"]
 comment: true
 mathjax: false
+slug: get-net-addr-and-subnet-mask-on-windows
 ---
 ```cpp
 #include <winsock2.h>

@@ -5,6 +5,7 @@ lastmod: 2013-05-11T21:41:52+08:00
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["from-csdn"]
+slug: install-vc6
 comment: true
 mathjax: false
 ---

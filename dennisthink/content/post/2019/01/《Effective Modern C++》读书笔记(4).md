@@ -2,7 +2,7 @@
 title: "《Effective Modern C++》读书笔记(4)"
 date: 2019-01-20T21:38:52+08:00
 lastmod: 2019-01-28T21:41:52+08:00
-url: /blog/note/effective-modern-cpp-learn-four/
+slug: note-effective-modern-cpp-learn-four
 # you can close something for this content if you open it in config.toml.
 comment: true
 mathjax: false

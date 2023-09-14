@@ -5,6 +5,7 @@ lastmod: 2016-12-14T21:41:52+08:00
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["from-cnblogs"]
+slug: use_openssl_generate_certificate_of_ssl
 comment: true
 mathjax: false
 ---

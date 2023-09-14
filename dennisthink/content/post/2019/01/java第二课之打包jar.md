@@ -23,7 +23,7 @@ mathjax: false
 >  SingleJar.java
 
 
-```java 
+```java {linenos=table}
 public class SingleJar{
     public static void main(String[] args){
         System.out.println("Single jar Demo");
@@ -49,7 +49,7 @@ Manifest文件需要注意的地方:
 
 Manifest.mf
 
-```
+```{linenos=table}
 Manifest-Version: 1.0
 Create-By: DennisMi
 Class-Path: .
@@ -59,7 +59,7 @@ Main-Class: UseManifest
 
 java源代码
 
-```java 
+```java {linenos=table}
 public class UseManifest{
     public static void main(String[] args){
         System.out.println("Use Manifest");
@@ -82,7 +82,7 @@ public class UseManifest{
 
 Manifest.mf
 
-```
+``` {linenos=table}
 Manifest-Version: 1.0
 Created-By: DennisMi
 Class-Path: .
@@ -92,7 +92,7 @@ Main-Class: Cal.Main
 
 Add.java
 
-```java 
+```java {linenos=table}
 package Cal;
 public class Add{
     public void PrintName(){
@@ -103,7 +103,7 @@ public class Add{
 
 Main.java
 
-```java 
+```java {linenos=table}
 package Cal;
 public class Main{
     public static void main(String[] args){
@@ -129,7 +129,7 @@ public class Main{
 
 Manifest.mf
 
-```
+```{linenos=table}
 Manifest-Version: 1.0
 Created-By: DennisMi
 ClassPath: Cal
@@ -139,7 +139,7 @@ Main-Class: Main
 
 Add.java
 
-```java 
+```java {linenos=table}
 package Cal;
 public class Add{
     public void PrintName(){
@@ -150,7 +150,7 @@ public class Add{
 
 Main.java
 
-```java 
+```java {linenos=table}
 import Cal.*;
 public class Main{
     public static void main(String[] args){
@@ -175,7 +175,7 @@ public class Main{
 
 Manifest.mf
 
-```
+```{linenos=table}
 Manifest-Version: 1.0
 Created-By: DennisMi
 Class-Path: ../Add.jar
@@ -185,7 +185,7 @@ Main-Class: Main
 
 Add.java
 
-```java 
+```java {linenos=table}
 package Cal;
 public class Add{
     public void PrintName(){
@@ -196,7 +196,7 @@ public class Add{
 
 Main.java
 
-```java
+```java {linenos=table}
 import Cal.*;
 public class Main{
     public static void main(String[] args){
