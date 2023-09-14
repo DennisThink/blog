@@ -5,6 +5,7 @@ lastmod: 2023-01-02T21:41:52+08:00
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["hugo","jane search"]
+slug: use-hugo-to-generate-blog-and-jane-as-theme
 comment: true
 mathjax: false
 ---

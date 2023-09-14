@@ -75,19 +75,14 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   identifier = "archives"
   pageref = "/post/"
 [[languages.zh-cn.menu.main]]
-  name = "标签"
+  name = "友链"
   weight = 30
-  identifier = "tags"
-  pageref = "/tags/"
-[[languages.zh-cn.menu.main]]
-  name = "分类"
-  weight = 40
-  identifier = "categories"
-  pageref = "/categories/"
+  identifier = "friend"
+  pageref = "/friendlink"
 
 [[languages.zh-cn.menu.main]]
   name = "关于"
-  weight = 50
+  weight = 80
   identifier = "about"
   pageref = "/about"
 
@@ -120,4 +115,12 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     a-email = "mailto:dennismi1024@gmail.com"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
+
+[permalinks]
+  [permalinks.page]
+    posts = '/articles/:year/:month/:slug/'
+    tutorials = '/training/:slug/'
+  [permalinks.section]
+    posts = '/articles/'
+    tutorials = '/training/'
