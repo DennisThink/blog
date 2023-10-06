@@ -10,7 +10,7 @@ comment: false
 mathjax: false
 ---
 
-大家好，我叫米彦辉，网名DennisThink.
+大家好，我是一名软件开发工程师,
 
 目前在北京从事软件开发的工作，主要的编程语言是C++。
 
@@ -20,9 +20,8 @@ mathjax: false
 
 * 我的Github:
 
-[https://www.github.com/DennisThink/](https://www.github.com/DennisThink/)
+IFtodHRwczovL3d3dy5naXRodWIuY29tL0Rlbm5pc1RoaW5rL10oaHR0cHM6Ly93d3cuZ2l0aHViLmNvbS9EZW5uaXNUaGluay8pCg==
 
 * Email:  
 
-dennisthink@hotmail.com 
-
+ZGVubmlzdGhpbmtAaG90bWFpbC5jb20K

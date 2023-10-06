@@ -75,8 +75,20 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   identifier = "archives"
   pageref = "/post/"
 [[languages.zh-cn.menu.main]]
-  name = "友链"
+  name = "标签"
   weight = 30
+  identifier = "tags"
+  pageref = "/tags/"
+[[languages.zh-cn.menu.main]]
+  name = "分类"
+  weight = 40
+  identifier = "categories"
+  pageref = "/categories/"
+
+
+[[languages.zh-cn.menu.main]]
+  name = "友链"
+  weight = 50
   identifier = "friend"
   pageref = "/friendlink"
 

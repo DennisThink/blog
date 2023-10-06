@@ -87,4 +87,4 @@ public:
 };
 ```
 
-[完整的代码请参考](https://github.com/DennisThink/LeetCodeNote)
+[完整的代码请参考](https://github.com/DT/LeetCodeNote)

@@ -9,6 +9,20 @@
   </url>
   
   <url>
+    <loc>https://www.dennisthink.com/post/2023/how-to-earn-money-my-understanding-of-business/</loc>
+    <lastmod>2023-09-19T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dennisthink.com/post/2023/use-pop3-to-read-email-from-163-mail-server/</loc>
+    <lastmod>2023-09-15T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.dennisthink.com/post/2023/user-interface-and-cross-platform/</loc>
     <lastmod>2023-08-23T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -387,6 +401,13 @@
   </url>
   
   <url>
+    <loc>https://www.dennisthink.com/post/2023/cpp_parameter_pack_learn_1/</loc>
+    <lastmod>2017-09-18T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.dennisthink.com/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -395,35 +416,42 @@
   
   <url>
     <loc>https://www.dennisthink.com/tags/blog/</loc>
-    <lastmod>2023-08-23T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.dennisthink.com/tags/history/</loc>
-    <lastmod>2023-08-23T21:41:52+08:00</lastmod>
+    <lastmod>2023-09-19T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.dennisthink.com/post/</loc>
-    <lastmod>2023-08-23T21:41:52+08:00</lastmod>
+    <lastmod>2023-09-19T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.dennisthink.com/tags/</loc>
-    <lastmod>2023-08-23T21:41:52+08:00</lastmod>
+    <lastmod>2023-09-19T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dennisthink.com/tags/thinking/</loc>
+    <lastmod>2023-09-19T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.dennisthink.com/</loc>
-    <lastmod>2023-08-23T21:41:52+08:00</lastmod>
+    <lastmod>2023-09-19T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dennisthink.com/tags/history/</loc>
+    <lastmod>2023-09-15T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2023,12 +2051,6 @@
   
   <url>
     <loc>https://www.dennisthink.com/post/2020/01/%E5%A4%A9%E6%B0%94api%E5%8F%91%E5%B8%83/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.dennisthink.com/post/2023/telnet_pop3_163_email/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

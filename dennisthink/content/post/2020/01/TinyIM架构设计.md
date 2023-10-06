@@ -46,7 +46,7 @@ mathjax: false
 ## 4. Github仓库以及部分文档
 
 
-TinyIM的源码仓库在[TimyIM](https://github.com/DennisThink/TinyIM),文档仓库在[TimyIMDoc](https://dennisthink.github.io/AboutAuther.html)。
+TinyIM的源码仓库在[TimyIM](),文档仓库在[TimyIMDoc]()。
 
 如果您在阅读代码和文档的过程中有什么意见和建议,希望您可以及时跟我联系。
 

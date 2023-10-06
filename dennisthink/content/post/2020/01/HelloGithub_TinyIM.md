@@ -9,7 +9,6 @@ mathjax: false
 ---
 
 ## 项目推荐
-- 项目地址：https://github.com/DennisThink/TinyIM
 
 - 类别：C++
 

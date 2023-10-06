@@ -3,7 +3,7 @@ title: "-fsanitize=address 参数作用"
 date: 2019-01-20T21:38:52+08:00
 lastmod: 2019-01-28T21:41:52+08:00
 weight: 50
-author: DennisThink
+author: DT
 slug: the-use-of-fsanitize-address-option
 # you can close something for this content if you open it in config.toml.
 comment: true

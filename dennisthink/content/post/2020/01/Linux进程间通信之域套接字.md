@@ -36,7 +36,7 @@ tags: ["linux","ipc"]
 #include <iostream>
 #include <string>
 
-const static std::string G_STR_SERVER_SOCK_ADDR="DennisThinkSocket";
+const static std::string G_STR_SERVER_SOCK_ADDR="DTSocket";
 
 int main(int argc, char *argv[])
 {
@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 #include <string>
 #include <errno.h>
 
-const std::string G_STR_SERVER_SOCK_ADDR="DennisThinkSocket";
+const std::string G_STR_SERVER_SOCK_ADDR="DTSocket";
 int main(int argc, char *argv[])
 {
     int nSockFd = socket(AF_UNIX, SOCK_STREAM,0);

@@ -19,7 +19,6 @@ slug: c-lua-call-each-other-code
 ```c
 /**
  * @file luaLearn.c
- * @author DennisThink (dennismi1024@gmail.com) (https://www.dennisthink.com/)
  * @brief C and Lua call Learn Demo
  * @version 0.1
  * @date 2022-08-19

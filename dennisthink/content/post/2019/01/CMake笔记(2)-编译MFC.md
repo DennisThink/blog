@@ -18,7 +18,7 @@ CMakeMFC1/CMakeMFC1/CMakeLists.txt 是MFC程序的CMake编译脚本。
 ```CMakeMFC1/CMakeLists.txt```是最外层的CMake编译脚本，当需要编译多个程序的时候，在此处修改。
 
 
-源代码参考:![]("https://github.com/DennisThink/CMakeLearn/tree/master/CMakeDemo3)
+源代码参考:![]("https://github.com/DT/CMakeLearn/tree/master/CMakeDemo3)
 
 ## 2. CMakeLists.txt的详细说明
 
