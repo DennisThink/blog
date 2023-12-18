@@ -5,7 +5,6 @@ lastmod: 2023-05-13T21:41:52+08:00
 weight: 50
 # you can close something for this content if you open it in config.toml.
 tags: ["email"]
-slug: use_telnet_get_email_of_qq_by_imap_protocal
 comment: true
 mathjax: false
 ---
@@ -16,16 +15,11 @@ mathjax: false
 ## 1. 连接到QQ邮箱的IMAP服务器
 
 在命令行窗口执行: 
-
-```shell
-telnet imap.qq.com 143
-```
+> telnet imap.qq.com 143
 
 Server:
 
-```shell
-* OK [CAPABILITY IMAP4 IMAP4rev1 ID AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2 NAMESPACE] QQMail XMIMAP4Server ready
-```
+>* OK [CAPABILITY IMAP4 IMAP4rev1 ID AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2 NAMESPACE] QQMail XMIMAP4Server ready
 
 看到上面这条消息证明连接成功。
 
